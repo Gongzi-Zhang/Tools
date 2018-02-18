@@ -1,0 +1,7 @@
+# process status
+-e
+    show all process
+-f
+    full format
+-l
+    long format

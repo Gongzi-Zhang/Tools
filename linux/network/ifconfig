@@ -1,0 +1,41 @@
+# ifconfig : configure your linux network
+ifconfig [-avs] [interface] [[aftype] address] [[-]broadcast [address]]
+	[netmask address] [up|down]
+
+-a  all interfaces
+-v  version
+-s  status
+
+# status checking
+ifconfig eth0
+
+# set the IP address of first interface to 192.168.0.1
+ifconfig eth0 192.168.0.1
+ifconfig eth0 add 33ffe:3240:800:1005::2/ 64 # IPv6
+ifconfig eth0 del 33ffe:3240:800:1005::2/ 64 # delete IPv6 address
+## set the subnet mask of first interface to 255.255.255.0
+ifconfig eth0 netmask 255.255.255.0
+## broadcast
+ifconfig eth0 broadcast 192.168.1.255
+## all in one
+ifconfig eth0 192.168.1.56 netmask 255.255.255.0 broadcast 192.168.1.255
+# MAC address
+ifconfig eth0 down
+ifconfig eth0 hw ether 00:AA:BB:CC:DD:EE    # change MAC address
+ifconfig eth0 up
+## or two in one:
+ifconfig eth1 hw ether 00:1D:1C:1D:1E
+ifconfig eth1 up
+# turn on(off) the first interface
+ifconfig eth0 down(up)
+# turn on(off) ARP protocol
+ifconfig eth0 arp 
+ifconfig eth0 -arp  # off   
+# set Max Transport Unit
+ifconfig eth0 mtu 1500	# 1500 bytes
+
+
+# some important parameters
+UP/DOWN	: 
+RX packets  : receive packets
+TX packets  : send packets

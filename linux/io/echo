@@ -1,0 +1,18 @@
+# important options
+-n  
+    no trailing newline -- do not output the newline in the last line.
+    i.e.
+    $ echo "Hello World"
+    Hello World
+    $
+    
+    $ echo -n "Hello World"
+    Hello World$	    # no trailing newline here 
+
+-v  
+    vertical tab
+    i.e.
+    $ echo -e "Hello \v World"
+    Hello
+	    World
+

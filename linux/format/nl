@@ -1,0 +1,3 @@
+#
+insert consecutive line numbers into the beginning of each line.
+equal to cat -n

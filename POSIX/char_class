@@ -1,0 +1,30 @@
+# 
+# This is the POSIX character classes
+[:alnum:]
+    Alphanumeric
+[:aplha:]
+    Alphabetic
+[:blank:]
+    Space and tab
+[:cntrl:]
+    Control chars
+[:digit:]
+    Numeric
+[:graph:]
+    Chars that are printable and are also visible ( a space is printable, but not visible, while an 'a' is both)
+[:lower:]
+    Lower-case alphabetic
+[:print:]
+    Printable chars ( chars that are not control chars )
+[:punct:]
+    Punctuation chars ( chars that are not letter, digits, control chars, or space chars )
+[:space:]
+    Space chars
+[:upper:]
+    Upper case alphabetic
+[:xdigit:]
+    chars that are hexadecimal digits ????
+
+# How much text matches
+(POSIX) regular expressions always match the leftmost, longest sequence
+of input characters that can match.

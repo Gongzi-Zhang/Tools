@@ -1,0 +1,58 @@
+#
+
+# useradd
+-g, --gid GROUP  
+    inital login group (belong to the user)
+-G, --groups GROUP1[, GROUP2,...GROUPN]  
+    supplementary groups
+-d, --home HOME_DIR  
+    home dir.
+-p, --password PASSWORD
+
+# groupadd
+#+ add a new group
+
+# userdel
+userdel user_name
+
+# groupdel
+groupdel group_name
+
+    
+# chown
+change ownership of a file or files. An ordinary user may not change
+the ownership of files, not even her own files.
+#chgrp
+change the group ownership of a file or files. You must be owner of the
+file(s) as well as a member of the destination group to use this 
+operation
+
+# usermod
+modify a user account. Changes may be made to the password, group 
+membership, expiration date, and other attributes of a given user's
+account.
+# groupmod
+Modify a given group. The group name or ID number may be changed.
+
+# who
+Show all current logged users
+The -m option gives detailed info about only the current user.
+Passing 'any two arguments' to who is the equivalent to who -m, as in
+--->   who am i or who the Man
+# whoami
+similar to who -m, but only lists the user name.
+# w
+extended version of who, show all logged on users and their processes.
+# logname
+Show current users' login name( as found from /var/run/utmp ).
+
+---> While logname prints the name of the logged in user, whoami gives
+the name of the user attached to the current process. try to find out
+a scene that this rule applies to.
+
+# su ---> substitute user
+
+
+# passwd
+sets, changes, or manages a user's password
+

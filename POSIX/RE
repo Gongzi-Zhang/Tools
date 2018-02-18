@@ -1,0 +1,22 @@
+# 
+\\
+    a literal backslash, '\'
+\a  
+    "alert" char, Control-g, ASCII code 7
+\b
+    Backspace, Control-h, ASCII code 8 (BS).
+\f
+    Formfeed, Control-l, ASCII code 12 (FF).
+\n
+    Newline, Control-j, ASCII code 10 (LF).
+\r
+    Carriage return, Control-m, ASCII code 13 (CR).
+\t
+    Horizontal tab, Control-i, ASCII code 9 (HT).
+\v
+    Vertical tab, Control-k, ASCII code 11 (VT).))))))
+\nnn
+    octal value, e.g.the code for the ASCII ESC (escape) char is '\033'
+\xhh
+    hexadecimal value
+

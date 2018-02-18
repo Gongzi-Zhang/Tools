@@ -1,0 +1,38 @@
+#
+# A filter for feeding arguments to a command, and also a tool for
+# assembling the commands themselves. It breaks a data stream into 
+# small chunks for filters and commands to process. 
+#
+# The default command for xargs is 'echo'.
+
+xargs is intended to deal with very long option for some command, but
+it seems useless for modern OS, which support very long argument list
+in my experiment, I rm more than 10000 fils at the same time with each
+file's name longer than 30 chars.
+
+# options
+-0
+    allow handling arguments containing whitespace or quotes
+    in combination with find -print0 or grep -lZ
+    i.e.
+    find . -type f -print0 | xargs -0 grep -liwZ GUI | xargs -0 rm -f
+    grep -rliwZ GUI . | xargs -0 rm -f
+-P N
+    Parallel process, run up to N processes simultaneously
+-i
+    i is the replace strings option
+-d  '\n'
+    set delimiter as '\n', to allow xargs to deal with line-records.
+-n N
+    limits to N the number of arguments passed
+    ls | xargs -n 8 echo
+    echo {0..9} | xargs -n 2
+-p
+    prompt for command
+-t
+    verbose; print command to stderr
+{}
+    as in find, {} serves as a placeholder for replacement text
+    i.e.
+    ls . | xargs -i -t cp ./{} $DES_DIR
+

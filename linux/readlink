@@ -1,0 +1,4 @@
+# get the full path of a file
+readlink -f <file>
+
+realpath do the same thing.

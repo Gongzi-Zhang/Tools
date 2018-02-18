@@ -1,0 +1,7 @@
+#
+
+Show and changes terminal settings.
+
+stty erase '#'	# set '#' char as erase(backspace) 
+stty -echo	# turn off screen echo.
+stty echo	# restore echo

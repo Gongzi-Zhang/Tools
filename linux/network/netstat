@@ -1,0 +1,8 @@
+# net status
+
+# usual options
+-a, --all
+   show all sockets
+-c, --continuous
+    refresh selected information every second continuously
+

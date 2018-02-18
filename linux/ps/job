@@ -1,0 +1,7 @@
+# job control
+jobs	# show status of current jobs
+fg %2
+bg %3
+
+# terminate a job
+kill %2

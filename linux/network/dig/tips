@@ -1,0 +1,12 @@
+#
+Domain Information Groper. Similar to nslookup, dig does an Internet 
+name server lookup on a host. May be run from the command-line or from 
+within a script.
+
+Some interesting options to dig are +time=N for setting a query timeout
+to N seconds, +nofail for continuing to query servers until a reply is 
+received, and -x for doing a reverse address lookup.
+
+# e.g.
+dig -x 81.9.6.2
+

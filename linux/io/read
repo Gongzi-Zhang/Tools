@@ -1,0 +1,21 @@
+#
+The read command may also read its variable value from a file 
+redirected to stdin. If the file contains more than one line, only 
+the first line is assigned to the variable. If read has more than one
+parameter, then each of these variables gets assigned a successive 
+'whitespace-delineated' string. The final variable gets the remainder 
+of the line. If there are more variables to be set than whitespace-
+delineated strings on the first line of the file, then the excess 
+variables remain empty. Cautain!!!
+
+## important options
+-s
+    silent
+-p
+    prompt
+-n N
+    only read in N chars
+-u
+    file descriptor
+-t
+    time out ; return non-zero(142) 

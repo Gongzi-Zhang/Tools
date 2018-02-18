@@ -1,0 +1,3 @@
+#
+Library trace: diagnostic and debugging tools that trace library calls
+invoked by a given command.

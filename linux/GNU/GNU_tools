@@ -1,0 +1,14 @@
+Bash:	shell
+GCC:	GNU C Compiler
+GDB:	GNU Debugger
+Coreutils:  a set of basic UNIX-like utilities, such as ls, cat, and chmod
+Findutils:  search and find
+Fontutils:  to convert fonts from one format to another or make new fonts
+The Gimp:   GNU Image Manipulation Program
+Gnome:	The GNU desktop environment
+Emacs(VIM):	a very power editor
+Ghostscript and Ghostview: interpreter and graphical frontend for PostScript
+GNU Photo:  interaction with digital cameras
+Octave:	    a programming language, primarily intended to perform numerical computations and image processing.
+GNU SQL:    relational database system
+Radius:	    a remote authentication and accounting server.

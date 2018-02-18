@@ -1,0 +1,28 @@
+# Network in Linux 
+
+# restart network after some configuration
+service network restart
+
+The most frequently used commands for configuring network in linux
+is ifconfig , route. among them, ifconfig is used for checking and
+configuring port, including device ip address, subnet mask and so on
+route is used for manage route table within linux kernel
+
+some other net operation commands include netstat, nslookup, host, 
+and ping.
+* netstat show net connection, routing table, and net port
+* nslookup quary Internet name servers interactively
+
+# host
+## seraches for info about an Internet host by name or IP address, 
+## using DNS
+host google.com
+
+# ipcalc
+## Displays IP information for a host. With the -h option, ipcalc does 
+## a reverse DNS lookup, finding the name of the host (server) from the
+## IP address.)
+ipcalc -h 202.92.42.236
+
+# chfn
+## change info disclosed by the finger command.

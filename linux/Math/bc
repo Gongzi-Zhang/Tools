@@ -1,0 +1,40 @@
+# 
+#
+command line:
+# using here document
+    > bc << LIMIT_STRING
+    > options
+    > statements
+    > operations
+    > LIMIT_STRING
+## e.g.
+    > bc << !
+    > scale=9; 19/7;
+    > !
+# using echo and pipe
+    > echo "scale=9; 19/7" | bc
+
+
+# different base
+## change different base to decimal number
+echo "ibase=$ibase; $number;"  | bc
+
+## print out different base from decimal
+echo `bc <<!
+    obase=16; "hex="; $dec
+    obase=10; "hex="; $dec
+    obase=8; "hex="; $dec
+    obase=2; "hex="; $dec
+!`
+
+    
+# using Math functions
+bc -l << EOF	# the '-l' option calls the 'bc' math library
+scale = 9
+s ( 1.7 )	# sine of 1.7 radians
+c ( 1.7 )	# cosine
+a ( 1.7 )	# arctangent, return radians
+l ( 1.7 )	# the natural logrithm 
+e ( 1.7 )	# the exponential function 
+j ( n, x )	# the Bessel function of integer order n of x.
+EOF

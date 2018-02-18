@@ -1,0 +1,5 @@
+#
+Trace the route taken by packets sent to a remote host. This command 
+works within a LAN, WAN, or over the Internet. The remote host may be 
+specified by an IP address. The output of this command may be filtered 
+by grep or sed in a pipe.

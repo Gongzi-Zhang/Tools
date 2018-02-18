@@ -1,0 +1,12 @@
+# commands for shutdowning the system
+reboot	# reboot system, root only
+shutdown [options] [time] [warning message]
+-k  : issue warning message but not shutdown system
+-r  : reboot after shutdown
+-h  : shutdown only
+-f  : fast reboot without 'fsck'
+-n  : fast shutdown without 'init'
+-c  : cancel a running shutdown
+# e.g.
+shutdown -r +10	    # reboot after 10 mins.
+shutdown -h now	    # shutdown now

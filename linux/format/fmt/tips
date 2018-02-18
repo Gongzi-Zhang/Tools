@@ -1,0 +1,4 @@
+# simple-minded file formatter
+
+WIDTH=40
+echo `ls .` | fmt -w $WDITH

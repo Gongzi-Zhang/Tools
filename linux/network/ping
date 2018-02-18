@@ -1,0 +1,12 @@
+# 
+ICMP: Internet Control Message Protocol, a protocol based on Linker-layer(I think, the layer under the TCP/IP)
+Broadcast an ICMP ECHO_REQUEST packet to another machine, either on a 
+local or remote network. This is a diagnostic tool for testing network 
+connections, and it should be used with caution.
+
+-r  bypass the normal routing tables and send directory to a host on 
+    an attached interface.
+
+
+# TCPing
+another tool similar to 'ping', but based on TCP. It can even specify the port to detect.

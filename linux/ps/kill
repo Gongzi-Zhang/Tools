@@ -1,0 +1,9 @@
+# kill process
+
+kill [-s signal] pid
+
+kill -l	    show signal table
+# e.g.
+kill -9 1234	# sent signal (whose corresponding num is 9) to 
+		# process 1234
+

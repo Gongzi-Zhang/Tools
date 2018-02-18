@@ -1,0 +1,5 @@
+#
+Remote synchronize, update files between two different networked 
+machines.
+
+rsync -a ~/sourcedir/*txt /node1/subdir/

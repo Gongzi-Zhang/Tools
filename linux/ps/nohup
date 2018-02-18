@@ -1,0 +1,4 @@
+nohup program > out 2> err < input & 
+# one problem with nohup is that the input is fixed, which means you
+# must know all the input exactly. So nohup is best for something
+# that doesn't require input.

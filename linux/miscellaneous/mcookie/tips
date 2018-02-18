@@ -1,0 +1,8 @@
+# 
+This command generates a "magic cookie," a 128-bit (32-character) 
+pseudorandom hexadecimal number, normally used as an authorization 
+"signature" by the X server. This also available for use in a script 
+as a quick 'n dirty random number.
+
+of course, a script can use 'md5sum' for the same purpose
+---> random=`md5sum $0 | awk '{print $1}'

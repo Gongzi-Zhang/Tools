@@ -1,0 +1,10 @@
+# an interactive process monitor
+commands used for top:
+<space>	    refresh contents
+h|?	    help
+m	    memory 
+t	    process and CPU status
+c	    commands and complete commands
+M	    sort by occupied memory size
+P	    sort by CPU usage
+q	    quit

@@ -1,0 +1,16 @@
+# 
+# change file attributes
+
++i
+    set file as immutable
++a
+    append only
++s
+    secure attribute, when set, then when it is deleted its block is
+    overwritten with binary zeroes.
++u
+    set undelete attribute, then when it is deleted, its content can 
+    still be retrieved.
++c
+    compress attribute
+

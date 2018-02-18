@@ -1,0 +1,2 @@
+#
+shred file completely, 

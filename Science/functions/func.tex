@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor, soul}
+
+\begin{document}
+\section{Interesting functions}
+
+\subsubsection{Weierstrass function}
+\begin{equation}
+    f(x) = \sum_{n=0}^{\infty}a^{n}cos(b^{n}\pi x)
+\end{equation}
+Continuous but not derivative everywhree.
+
+
+\section{Differentive Equations}
+
+\subsubsection{First Order Equation}
+$$ \frac{dV}{dt} + \eta(t)V(t) = f(t)  $$
+so:
+$$\frac{1}{I}\frac{d(I(t)V(t))}{dt} = \frac{dV(t)}{dt} +
+\frac{I'(t)}{I(t)}V(t)$$
+if: 
+$$ \frac{I'(t)}{I(t)} = \eta(t)	\rightarrow I(t) =
+exp(\int^{t}dt'\eta(t'))$$
+so:
+$$ \frac{d(I(t)V(t))}{I dt} = f(t)$$
+
+\subsubsection{Floquet theory}
+\begin{equation}
+    \ddot{x} + \omega_{0}^{2}(1+\mu cos(\nu t))x = 0
+\end{equation}
+Analogy to QM(Schrodinger Equation):	\\
+$$-\frac{\hbar^{2}}{2m}{\psi''} + U(x)\psi = E\psi$$ 
+where $U(x) = -U_{0}cos\frac{2\pi x}{a}$.
+So let 
+$$k^{2} = \frac{2mE}{\hbar^{2}}, u=\frac{U_0}{E}, \nu=\frac{2\pi}{a}$$ 
+$u$ is small, we will get   
+$$ \psi''+k^{2}\psi = -k^{2}ucos(\nu x)\psi$$
+
+\section{Integrated functions}
+\subsubsection{$\Gamma$ function}
+$$\Gamma(z) \equiv \int_{0}^{+\infty}dt e^{-t} t^{z-1} =
+2\int_{0}^{+\infty}dx e^{-x^2}x^{2z-1}$$
+
+$$\Gamma(z)\Gamma(1-z) = \frac{\pi}{sin\pi z}$$
+
+\end{document}

@@ -1,0 +1,14 @@
+#
+'tac', is the inverse of cat, listing a file backwards from its end.
+'rev', reverse each line of a file, and output to stdout
+# some interesting options
+-n
+    inserts consecutive numbers 
+-b
+    numbers only the non-blank lines
+-v
+    echoes non-printable chars, using ^ notation
+-s
+    squeezes multiple consecutive blank lines into a single blank line
+
+

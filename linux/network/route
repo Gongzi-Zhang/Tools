@@ -1,0 +1,5 @@
+# route manipulates the kernel's IP routing tables.
+
+# some usual options
+-v	    verbose 
+-A family   use the specified address family

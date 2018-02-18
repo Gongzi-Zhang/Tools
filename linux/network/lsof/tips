@@ -1,0 +1,10 @@
+#
+#
+List open files. This command outputs a detailed table of all currently
+open files and gives info about their owner, size, the processes 
+associated with them, and more. 
+
+The -i option lists open network socket files, and this can help trace
+intrusion or hack attempts.
+
+lsof -ni
