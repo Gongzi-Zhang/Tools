@@ -1,6 +1,11 @@
 # 
 TCPing: 
 
+Linux 系统中最常用的网络配置命令包括 ifconfig,route.其中 ifconfig 用来查
+看和配置网络接口等通常是网卡信息包括网络接口设备的 IP 地址. route 用来管理 
+Linux 系统内核中的路由表掩码. 它最大的用途就是用来设定静态的路由表项, 通常
+是在系统用 ifconfig 配置网络接口后, 用它来设定主机或者一网段的 IP 地址应该
+通过什么接口发送等.
 
 
 Introduction
@@ -37,6 +42,13 @@ ftp:	21
 ssh:	22
 telnet:	23
 
+
+# config files
+/etc/hosts
+/etc/services
+/etc/host.conf
+/etc/nsswitch.conf
+/etc/resolv.conf
 
 ### Doubts
 * DNS 污染： GFW通过基于正则表达式的黑名单匹配， 一旦发现有关键字匹配上了，就

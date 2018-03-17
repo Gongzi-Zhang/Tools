@@ -1,14 +1,16 @@
+#!/bin/bash
+
 # package managements
 
-# alien
-convert some RPM packages into .deb package
 ## dpkg 
 # installation
 dpkg -i DEB_PACKAGE
-    if you come across error due to dependency problems, run:
-	sudo apt-get install -f
-    to download the missing dependencies and configure everything.
-dpkg -R --install /home/Soft/	## install all .deb packages in this dir.
+    # if you come across error due to dependency problems, run:
+    sudo apt-get install -f
+    # to download the missing dependencies and configure everything.
+dpkg -R --install <dir.> 
+    # install all .deb packages in this dir.
+
 # remove
 dpkg -r PACKAGE_NAME
 # Reconfigure
@@ -30,3 +32,10 @@ dpkg -S /bin/cat
 
 # configuration
 sudo debconf-show PACKAGE_NAME
+
+
+# apt-get
+## installing soft locally.
+apt-get	 source <PACKAGE>
+./configure --prefix=$HOME/myapps
+make	&& make install

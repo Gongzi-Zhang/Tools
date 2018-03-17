@@ -2,30 +2,32 @@
 
 ## Important options
 -D debugopts
-    print diagnostic info
-# find usage examples
+    # print diagnostic info
+
+# usage examples
 # find DIR criteria action
 find path1 [path2...] criteria action
 find <path> -name <searchstring>
 
 ## examples
 find . -size +5000k	
-    find files bigger then 5MB
+    # find files bigger then 5MB
 find . -type f -size +10485760c
-    find files larger than 10 megabytes	# without the tailing C, the 
-# argument would be interpreted as a number of blocks, which are 
-# generally 512 bytes
+    # find files larger than 10 megabytes	# without the tailing C, the argument would be interpreted as a number of blocks, which are generally 512 bytes
 find . -mtime -1
-    find files that were modified within the last day
+    # find files that were modified within the last day
 find . -mtime +30
-    find files older than 30 days
+    # find files older than 30 days
 find . -mtime 30
-    find files that are exactly 30 days old
+    # find files that are exactly 30 days old
 find . -mtime 1
-    find files that were modified one day ago
+    # find files that were modified one day ago
 find . -mmin(amin, cmin) 30
-    measure time in minutes
+    # measure time in minutes
 find . -newer /var/log/backup.timestamp -print
+
+find . -ftype f	
+    # find out regular files
 
 # -perm
 find . -perm 0644 -print    # files with exactly these permission
@@ -39,14 +41,7 @@ a file satisfy the criteria, which is slow and time-wasting. To apply
 action to all the found files( but not one by one), one can use +
 
 find . -name '.jpg' -exec rm {} +
-# this will rm all found jpg file with one rm command
-another way to do bulk job is to use xargs, but be careful with it,
-xargs is a dangerous UNIX command, it will parse each word from the 
-file name and even parses quotation marks. To prevend such possible 
-bad side effect, there comes a walkaround: -print0 | xargs -0
--print0 will tell find to tail each found result with NUL char 
-(ASCII 00) rahter than its default '\n', and the -0 option tell xargs
-to read NUL-delimited words instead of space-delimited ones.
+# this will rm all found jpg file with one rm command another way to do bulk job is to use xargs, but be careful with it, xargs is a dangerous UNIX command, it will parse each word from the file name and even parses quotation marks. To prevend such possible bad side effect, there comes a walkaround: -print0 | xargs -0 -print0 will tell find to tail each found result with NUL char (ASCII 00) rahter than its default '\n', and the -0 option tell xargs to read NUL-delimited words instead of space-delimited ones.
 
 # glob
 # find uses globs to express filename-matching patterns. So we had to 
