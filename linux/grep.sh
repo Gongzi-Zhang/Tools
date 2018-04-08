@@ -1,4 +1,4 @@
-info grep   for complete infromation
+info grep   # for complete infromation
 # syntax
 grep [OPTIONS] pattern [file...]
 # important options
@@ -64,3 +64,13 @@ While extended (grep -E) support this meta-chars without backslash
 -R, --dereference-recursive
     Read all files under each directory, recursively. Following all symbolic links, unlike -r
 
+
+
+# examples
+grep 'w..i....n' [file]
+    find such word as w is the first letter, i the forth, and n the 
+    ninth letter in file 
+
+# remove all the files xecept one
+ls | grep -v file.txt | xargs rm
+ls | grep -v file.txt | parallel rm

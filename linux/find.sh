@@ -131,6 +131,8 @@ find . -name "*.csh" -o -name "*.py" -delete # will only delete the last find fi
 find . \( -name "*.csh" -o -name "*.py" \) -delete
 ## delete dir
 find . -name "tmp" -exec rm -r {} + 
+## delete all the files except one
+find . ! -name 'file.txt' -type f -exec rm -f {} +
 ## explanation
 mtime = last modification time
 ctime = last status change time ( via 'chmod' or otherwise)

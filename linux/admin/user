@@ -1,13 +1,20 @@
 #
 
 # useradd
--g, --gid GROUP  
-    inital login group (belong to the user)
--G, --groups GROUP1[, GROUP2,...GROUPN]  
-    supplementary groups
--d, --home HOME_DIR  
+-d  --home HOME_DIR  
     home dir.
--p, --password PASSWORD
+-g  --gid GROUP  
+    inital login group (belong to the user)
+-G  --groups GROUP1[, GROUP2,...GROUPN]  
+    supplementary groups
+-k  prevents possible copying of files from a skeleton dir. by changing 
+    the input location to the null device
+-p  --password PASSWORD
+-s  default shell
+## e.x.
+groupadd new	# create a new gorup
+useradd -s /bin/bash -g new -k /dev/null new
+passwd new	# create password
 
 # groupadd
 #+ add a new group

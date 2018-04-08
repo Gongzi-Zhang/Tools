@@ -26,6 +26,9 @@ dpkg -p PACKAGE_NAME
 dpkg -c PACKAGE_NAME
 # search which package a file belongs to
 dpkg -S /bin/cat
+# to see where a package is installed on your Ubuntu
+dpkg -L PACKAGE_NAME 
+dpkg -l | grep <keyword>    # search for some packages
 
 ### files
 /var/lib/dpkg
@@ -34,8 +37,18 @@ dpkg -S /bin/cat
 sudo debconf-show PACKAGE_NAME
 
 
-# apt-get
+# apt
+# source list: /etc/apt/source.list
+# to add a source trusty into it like this:
+deb https://cran.rstudio.com/bin/linux/ubuntu trusty
+
 ## installing soft locally.
 apt-get	 source <PACKAGE>
 ./configure --prefix=$HOME/myapps
 make	&& make install
+
+# apt-cache
+apt-cache search racing game
+apt-cache show torcs
+apt-cache policy torcs
+apt-cache search tors

@@ -1,7 +1,0 @@
-#
-
-
-# grep usage
-grep 'w..i....n' [file]
-    find such word as w is the first letter, i the forth, and n the 
-    ninth letter in file 
