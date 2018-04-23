@@ -1,5 +1,35 @@
 # Network in Linux 
 
+## interface
+ifconfig (ifup / ifdown)
+route
+ip
+
+## wireless
+iwlist	
+iwconfig
+
+## network
+netstat
+nmap	    # port scan
+
+## traffic
+tcpdump
+wireshark   # gui
+nc
+route
+
+## firewall
+iptables [-AI chain] [-io interface] [-p protocol] [-s source] [--sport port] [-d destination] [-dport port] -j [ACCEPT|DROP|REJECT]
+
+## NAT (Natwork Address Translation)
+/proc/sys/net/ipv4/ip_forward	
+
+## ip
+host 
+nslookup
+dig
+
 # restart network after some configuration
 service network restart
 

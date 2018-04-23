@@ -1,0 +1,3 @@
+# wireless interface
+iwlist scan 
+    # scan all AP

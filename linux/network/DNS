@@ -1,1 +1,4 @@
 Hinet	168.95.1.1
+
+# files
+/etc/resolv.conf

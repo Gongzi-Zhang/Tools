@@ -45,15 +45,14 @@ telnet:	23
 
 # config files
 /etc/hosts
-/etc/services
+/etc/services	
+    the port used by different kinds of service: http, ftp, ssh....
+/etc/protocols
+    IP package protocol: ICMP/TCP/UDP
 /etc/host.conf
 /etc/nsswitch.conf
 /etc/resolv.conf
 
 ### Doubts
-* DNS 污染： GFW通过基于正则表达式的黑名单匹配， 一旦发现有关键字匹配上了，就
-马上开始伪造查询结果并发送回去， 再接着篡改从墙外到来的真正的查询结果。
-无聊吗？ 直接做第二步不就好了？ 或者伪造查询结果后，直接丢弃这个DNS查询即可，为什么要继续向境外DNS发送查询请求？ 怎么篡改？ 
-
 * VPN: In my understanding, VPN is just another private protocol, nothing different
   than any other public protocols, why it could be regarded as a virtual netfase.
