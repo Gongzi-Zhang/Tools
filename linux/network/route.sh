@@ -18,9 +18,14 @@ metric	M
 
 # e.g.
 
+# set default gate
+route add default dev pptp-VPN
+route del default dev pptp-VPN
+
 # add a route entry, targeted net: 192.168.0.x go through port eth0
 route add -net 192.168.0.0  netmask 255.255.255.0   dev eth0
 # add(del) a default route
 route add(del) 0.0.0.0   gw <Gate-ip>
+
 
 

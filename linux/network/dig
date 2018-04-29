@@ -8,5 +8,8 @@ to N seconds, +nofail for continuing to query servers until a reply is
 received, and -x for doing a reverse address lookup.
 
 # e.g.
+dig @DNSIP Domain QueryType
+dig @8.8.8.8 facebook.com A
+
 dig -x 81.9.6.2
 

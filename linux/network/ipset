@@ -1,0 +1,12 @@
+# ipset is an array that store IP values, it usually 
+# stay in the memory, which will disappear after rebooting
+ipset create vpn iphash -exist
+    # create a ipset of iphash type, whose name is VPN.
+    # if it has already existed, then skip the creation.
+ipset add vpn 8.8.8.8
+ipset del vpn 8.8.8.8
+    # add(del) a IP to the vpn ipset
+ipset flush vpn
+    # clear all vpn ipset
+ipset test vpn 8.8.8.8
+    # test if IP 8.8.8.8 is in the ipset

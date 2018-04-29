@@ -1,4 +1,14 @@
-Hinet	168.95.1.1
+Local	127.0.0.1
+Google	8.8.8.8
+Nortorn	199.85.127.20
+Comodo	8.26.56.26
+DNS Advantage	156.154.70.1
+Verizoon    4.2.2.4
+NTT	129.250.35.250
+114 (China Mobile)  114.114.114.114
+Ali	223.5.5.5
+CNNIC	1.2.4.8
+	
 
 # files
 /etc/resolv.conf

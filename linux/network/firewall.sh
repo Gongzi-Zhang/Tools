@@ -25,3 +25,6 @@ iptables -A INPUT -p UDP -i wlp3s0 --dport 53 --sport 1024:65534 -j ACCEPT # DNS
 iptables -A INPUT -p TCP -i wlp3s0 --dport 80 --sport 1024:65534 -j ACCEPT # WWW
 iptables -A INPUT -p TCP -i wlp3s0 --dport 110 --sport 1024:65534 -j ACCEPT # POP3
 iptables -A INPUT -p TCP -i wlp3s0 --dport 443 --sport 1024:65534 -j ACCEPT # HTTPS
+
+
+

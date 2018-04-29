@@ -56,3 +56,9 @@ ipcalc -h 202.92.42.236
 
 # chfn
 ## change info disclosed by the finger command.
+
+
+
+
+# files
+/etc/services	# popular service port

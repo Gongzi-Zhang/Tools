@@ -26,8 +26,13 @@ find . -mmin(amin, cmin) 30
     # measure time in minutes
 find . -newer /var/log/backup.timestamp -print
 
+find . -type f -mtime +120 -mmin -480 -exec more {} \;
+    # ls all files that are modified in the past 2 to 8 hours.
+
 find . -ftype f	
     # find out regular files
+find . -type f -atime -30 -exec mv {} ../ \;	
+    # find all files that is visited within 30 days and move them to upper dir.
 
 # -perm
 find . -perm 0644 -print    # files with exactly these permission
