@@ -1,4 +1,34 @@
 # process status
+ps -l	# show processes in this terminal (bash env.)
+ps aux	# show all system processes
+
+# ps -l: What does each column mean ?
+* F:	flags
+    > 4	root
+    > 1	fork, but not execute
+* S:	status
+    > R	running
+    > S	Sleep
+    > D	sleep state that can't be waked up, usually it is waiting for I/O
+    > T	stop
+    > Z	zombie, the process has finished but can't be remove from the 
+	memory
+* C	CPU usage
+* PRI/NI    Priority/Nice
+* ADDR/SZ/WCHAN	
+	ADDR is the address in memory, /SZ represents the consuming of the
+	process, /WCHAN indicate the running status, if it is '-', then it
+	is in running status.
+* TIME	CPU running time, not system time
+
+# ps aux
+* VSZ	virtual memory consuming (KB)
+* RSS	其占用的固定的内存数量
+* STAT	status
+* TIME	CPU running time
+
+
+# options
 -e
     show all process
 -f

@@ -67,9 +67,10 @@ While extended (grep -E) support this meta-chars without backslash
 
 
 # examples
-grep 'w..i....n' [file]
+grep 'w..i....n' file
     find such word as w is the first letter, i the forth, and n the 
     ninth letter in file 
+grep -E 'cron|bash' file    # grep A or B
 
 # remove all the files xecept one
 ls | grep -v file.txt | xargs rm

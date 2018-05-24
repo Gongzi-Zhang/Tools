@@ -1,4 +1,4 @@
-# kill process
+# kill: sent signals to process
 
 kill [-s signal] pid
 
@@ -6,4 +6,11 @@ kill -l	    show signal table
 # e.g.
 kill -9 1234	# sent signal (whose corresponding num is 9) to 
 		# process 1234
+
+# killall: sent signal by process name, rather than pid as kill
+-i  interactive
+-e  exact (command can't exceed 15 chars)
+-I  Ignore case
+
+killall -9 httpd
 

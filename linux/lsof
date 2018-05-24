@@ -1,6 +1,6 @@
 #
-#
-List open files. This command outputs a detailed table of all currently
+List open files of a process. 
+This command outputs a detailed table of all currently
 open files and gives info about their owner, size, the processes 
 associated with them, and more. 
 
@@ -8,3 +8,6 @@ The -i option lists open network socket files, and this can help trace
 intrusion or hack attempts.
 
 lsof -ni
+
+lsof -u root -a -U  # list all socket files opened by processes owned by root.
+lsof +d /dev	# ls all opened devices

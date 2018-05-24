@@ -38,6 +38,7 @@ find . -type f -atime -30 -exec mv {} ../ \;
 find . -perm 0644 -print    # files with exactly these permission
 find . -perm -0644 -print   # files include such permission
 find . -perm /0644 -print   # files with any of the permission
+find . -perm /6000 -print   # files with SUID permission
 find . -perm -o=r -print
 
 # bulk operation

@@ -1,3 +1,5 @@
+一手信息（作者博客，公众号，其他帐号）==> 二手 （他人转载，cached)
+流量分析：除google外，还有那些大站但不被google检索
 # 下载视频
 bilibili: ibilibili | bilibilijj
 youtube: youtube1s  (暴力膜)
@@ -63,3 +65,6 @@ youtube: youtube1s  (暴力膜)
 
 ## 窥探世界的隐私
 灰色/地下/小众/不为人知 的 社区/论坛/圈子/江湖
+
+
+

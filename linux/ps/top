@@ -1,5 +1,11 @@
 # an interactive process monitor
+-d N	the time interval between update, default as 5s.
+-b	run top in batch mode
+-n N	usually used with -b together, specify the number of execution
+-p PID	look at the specified PID
+
 commands used for top:
+1	    show different CPU
 <space>	    refresh contents
 h|?	    help
 m	    memory 
@@ -8,3 +14,4 @@ c	    commands and complete commands
 M	    sort by occupied memory size
 P	    sort by CPU usage
 q	    quit
+r	    renice
