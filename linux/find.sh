@@ -82,7 +82,7 @@ find . \( -name '*.autosave.*' -o -name '*.bak'	\) -a -print
 # -name
 # this option matches only the file's name inside of the deepest dir.
 # so:
-fine -name 'foo.*' -print
+find -name 'foo.*' -print
 # will match only foo.jpg, but not foo/bar.jpg
 # -path
 # if we want to look at the dir name, we must use the -path filter:
@@ -97,9 +97,9 @@ find -type f -atime +5 -exec rm {} \;
 
 ## bash command
 find . -type f -name '*.ext' -exec bash -c 'name=${1##*/}; echo "$name  -> ${name^^}"' _ {} \;
-    in the above command, the '_' in the bash command is used as $0 for
-    the bash script, otherwise, the first result of find will be used
-    as $0. Just a placeholder.
+    # in the above command, the '_' in the bash command is used as $0 for
+    # the bash script, otherwise, the first result of find will be used
+    # as $0. Just a placeholder.
 
 # rm badnamed files ( containing non-alphabetical chars or space )
 find . -name '*[+{;"\\=?~()<>&*|$ ]*' -maxdepth 0 -exec rm -f '{}' \;
@@ -116,14 +116,14 @@ find . -type -f -name "*.csh" -not -path "./tmp/*" -not -path "./script/*"
 # note the * under each excluded dir
 
 # -prune
-If the current file is a dir, and the -prune operator is evaluated, 
+" If the current file is a dir, and the -prune operator is evaluated, 
 then find won't descend into that dir. Thus -prune allows skipping 
-subdir and their contents
-But -prune doesn't disable the implicit -print, so
+subdir and their contents 
+But -prune doesn't disable the implicit -print, so "
     find . -name foo -prune	
     $ ./foo	    # this dir. is not descended
     $ ./bar/bar/foo
-will still print all found files
+" will still print all found files "
 
 find . -path ./misc -prune -o -name '*.txt' -print
 # exclude ./misc, because in find, -prune is an action, that acts on 
