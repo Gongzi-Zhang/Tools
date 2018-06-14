@@ -1,0 +1,3 @@
+youtube-dl --extract-audio --audio-format mp3 \i{https://url\}
+
+youtube-dl --merge-output-format mp4 \i{https://youtube.com/...\}
