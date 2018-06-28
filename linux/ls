@@ -9,16 +9,10 @@
     show escape chars
 -i
     show file inodes
-
-
 -R
     ls recursively
-
 -lu
     ls atime
-
-# du
-du command can summarize the occupied memory space.
 
 
 ########### ls color scheme ###########
