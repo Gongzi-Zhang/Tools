@@ -1,2 +1,0 @@
-#
-shred file completely, 

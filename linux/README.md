@@ -4,16 +4,15 @@ man --> reference --> GNU website(google)
 
 
 # Special words: $'string'
-*** word of the form $'string' are treated specially. The word expands to string, with
+word of the form $'string' are treated specially. The word expands to string, with
 backslash-escaped chars replaced as specified by the ANSI C standard. Backslash escape sequences,
 if present, are decoded as follows:
     \a	alert(bell)
     carriage return:	horizontal tab
     \v	vertical tab
     \'  single quote
-********
 
-**** which command to choose:
+which command to choose:
 
 deletion:
     |-- tr
@@ -41,10 +40,3 @@ substitution(translation):
     |-- tr
     |-- ex(vim in normal mode)
 
-
-*********
-
-# to read 
-file
-
-What's the difference between new line, return, carrige return?

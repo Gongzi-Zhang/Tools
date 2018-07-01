@@ -1,1 +1,0 @@
-fuser -uv . # find out process using current dir.

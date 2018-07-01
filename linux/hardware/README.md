@@ -1,3 +1,14 @@
+# temperature
+hddtemp	    : check temp. of hard drive
+sensors	    : check temp. of cpu and mother board
+
+# CPU
+
+# Memory
+
+# Hard Drive
+
+
 uname -a               # 查看内核/操作系统/CPU信息
 head -n 1 /etc/issue   # 查看操作系统版本
 cat /proc/cpuinfo      # 查看CPU信息

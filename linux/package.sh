@@ -48,7 +48,52 @@ apt-get	 source <PACKAGE>
 make	&& make install
 
 # apt-cache
-apt-cache search racing game
-apt-cache show torcs
 apt-cache policy torcs
-apt-cache search tors
+
+# Dependency
+apt-file
+    a program contains all the files of each package available in 
+    repository.
+apt-file update
+    download a list of all the availbale packages and all of the
+    files those packages contain.
+apt-file list
+    list all the files in a given package
+apt-file search
+    search the package contain a specific file. 
+
+# search
+apt-cache search <search-term>
+    Each package has a name and a description. This command lists
+    packages whose anme or description contains <search-term>
+dpkg -l <search-term>*
+    This will find packages whose names contain <search_term>. 
+    Similar to apt-cache search, but also shows whether a package is 
+    installed on your system by marking it with ii(installed) and 
+    un (not installed).
+
+apt-cache show <package-name>
+    show the description of package and other relevant info including
+    version, size, dependencies and conflicts.
+dpkg --print-avail  <package-name>
+    similar to "apt-cache show"
+
+dpkg -L <package-name>
+    list files in package
+dpkg -c /path/to/foo.deb
+    list files in the package foo.deb
+dpkg -S <filename-search-pattern>
+
+apt-cache pkgnames
+    provide a listing of every package in the system
+# files
+/var/cache/apt/archives
+    to find out packages you have downloaded
+
+
+
+# debian file
+ar x package.deb
+    extract deb file
+ar rcs package.deb debina-binary control.tar.gz data.tar.gz
+    pack a deb package
