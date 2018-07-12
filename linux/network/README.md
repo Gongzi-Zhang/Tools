@@ -1,11 +1,88 @@
-# 
-TCPing: 
+### Doubts
 
-Linux 系统中最常用的网络配置命令包括 ifconfig,route.其中 ifconfig 用来查
-看和配置网络接口等通常是网卡信息包括网络接口设备的 IP 地址. route 用来管理 
-Linux 系统内核中的路由表掩码. 它最大的用途就是用来设定静态的路由表项, 通常
-是在系统用 ifconfig 配置网络接口后, 用它来设定主机或者一网段的 IP 地址应该
-通过什么接口发送等.
+# Network in Linux 
+
+## interface
+ip address
+ip maddr	: multicast address
+ip neigh        : ARP or NDISC cache entry
+ethtool		: ethernet device settings
+> > > > ifconfig (ifup / ifdown)    (deprecated)
+### wireless
+iwlist	
+iwconfig
+
+
+
+## DNS
+systemd-resolve status
+
+
+
+## route
+ip route	: routing table entry
+mtr		: my traceroute; see also tracepath
+routel
+tracepath	: trace the Internet connnection; see also mtr
+
+
+
+## network
+dig
+hosts		: seraches for ip of an host by name or vice versa
+ip tunnel	: tunnel over Ip
+netstat		: show net connection, routing table, and net port
+nmap		: port scan
+nslookup	: quary Internet name servers interactively
+
+
+
+## traffic
+iptables	: packet filtering and NAT
+nc
+tcpdump
+wireshark	: gui
+
+
+
+## firewall
+iptables [-AI chain] [-io interface] [-p protocol] [-s source] [--sport port] [-d destination] [-dport port] -j [ACCEPT|DROP|REJECT]
+
+## NAT (Natwork Address Translation)
+/proc/sys/net/ipv4/ip_forward	
+
+# restart network after some configuration
+service network restart
+
+
+The most frequently used commands for configuring network in linux
+is ifconfig , route. among them, ifconfig is used for checking and
+configuring port, including device ip address, subnet mask and so on
+route is used for manage route table within linux kernel
+
+
+### Usual Port:
+DNS standard prot: 53
+    google DNS: 8.8.8.8
+    114 DNS:	114.114.114.114
+http protocol: 80
+https:	443
+ftp:	21
+ssh:	22
+telnet:	23
+
+
+
+# config files
+/etc/hosts
+/etc/services	
+    the port used by different kinds of service: http, ftp, ssh....
+/etc/protocols
+    IP package protocol: ICMP/TCP/UDP
+/etc/host.conf
+/etc/nsswitch.conf
+/etc/resolv.conf
+
 
 
 Introduction
@@ -29,30 +106,3 @@ Introduction
 家用路由器应该不提供交换功能，这点可以实验确认，给内网机器发送数据包，
 看tracerout结果是否通过了网关即可。因为对于家用路由而言，连接设备其实
 不多，内网通讯需求不强。所以干脆只工作在第三层，效率损失并不大。
-
-
-
-### Usual Port:
-DNS standard prot: 53
-    google DNS: 8.8.8.8
-    114 DNS:	114.114.114.114
-http protocol: 80
-https:	443
-ftp:	21
-ssh:	22
-telnet:	23
-
-
-# config files
-/etc/hosts
-/etc/services	
-    the port used by different kinds of service: http, ftp, ssh....
-/etc/protocols
-    IP package protocol: ICMP/TCP/UDP
-/etc/host.conf
-/etc/nsswitch.conf
-/etc/resolv.conf
-
-### Doubts
-* VPN: In my understanding, VPN is just another private protocol, nothing different
-  than any other public protocols, why it could be regarded as a virtual netfase.

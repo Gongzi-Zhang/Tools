@@ -12,31 +12,22 @@ if present, are decoded as follows:
     \v	vertical tab
     \'  single quote
 
-which command to choose:
 
-deletion:
-    |-- tr
+# URL	http://www.linfo.org/ (The Linux Information Project)
+# concept
+##  Standard streams of data
+* Linux features this concept of standard streams of data.Each program,
+and therefore each process, is automatically innitialized with "three"
+data streams: one input stream("stdin"), two output streams("stdout" and "stderr"), which all consists of data in plain text. 
 
-reading:
-    |-- pg
-    
-selection:
-    |-- cut (bytes, characters/columns, fields)
-    |-- head (lines, bytes)
-    |-- tail (lines, bytes)
-    |-- awk (fields, lines)
-    |-- sed (lines)
-    |-- grep (very powerful)
+* Standard Input: (stdin), is the source of input data for command line programs in Linux.
+-- stdin end with "CTRL-d" in newline.
 
-special_charset:
-    |-- tr
 
-squeesing-repeat:
-    |-- tr
-    |-- uniq
 
-substitution(translation):
-    |-- sed
-    |-- tr
-    |-- ex(vim in normal mode)
-
+# unix philosophy
+Modularity  -- design programs to do only a single thing, but to do it well
+Compostion -- and to work together well with other programs
+Silence	-- a program should, by default, say nothing other than that which is interesting, unusual or surprising.
+Using plain text -- to be more easier to use, to set, and to interface.
+Free --	not only monetary, but also usage.

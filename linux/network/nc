@@ -1,5 +1,0 @@
-# netcat utility
-TIMEOUT=9
-IDPOET=113
-HOST="google.com"
-nc -z -w $TIMEOUT $HOST $IDPOET  # -z scans for listening daemons

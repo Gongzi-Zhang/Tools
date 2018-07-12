@@ -11,3 +11,8 @@ rsync --delete --ignore-errors source/ dest/
 > '/dir/ means exclude the root folder /dir, here root refer to the source folder'
 > '/dir/* means get the root folder /dir but not the contents'
 > 'dir/ means exlcude any folder anywhere whose name contains dir/'
+
+
+# hardlink: -H
+the -a option will not copy hardlink by default, because finding multiply-linked
+files is expensive. To do that, explicitly specify -H.

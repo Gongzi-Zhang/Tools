@@ -48,7 +48,7 @@ apt-get	 source <PACKAGE>
 make	&& make install
 
 # apt-cache
-apt-cache policy torcs
+apt-cache policy torcs	# show installation status of specific package
 
 # Dependency
 apt-file
@@ -97,3 +97,22 @@ ar x package.deb
     extract deb file
 ar rcs package.deb debina-binary control.tar.gz data.tar.gz
     pack a deb package
+# Debian Software Management Tools
+
+
+
+## source file: /etc/apt/sources.list
+entry like this:
+deb http://mirrors.ustc.edu.cn/debian distribution component1 comp2 comp3
+deb-src http://mirrors.ustc.edu.cn/debian distribution component1 comp2 comp3
+
+deb: after-compiled binary package
+deb-src: source package + Debian control file(.dsc) + diff.gz
+
+http://..... URL
+Distribution: can be either the release code name/alias(wheezy, jessie, stretch, sid) or the release class (oldstable, stable, testing, unstable)
+
+component:  
+main:	DFSG-compliant packages, which do not rely on software outside this area to operate. These are the only packages considered part of the Debian distribution
+contrib: DFSG-compliant software, but have dependencies not in main( possibly non-free packages)
+non-free: contains software that does not comply with the DFSG
