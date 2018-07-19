@@ -1,5 +1,12 @@
 #
 
+# adduser
+the --disabled-passwd option will not set a password, meaning no password is legal (so you can't login through GUI Login), but login is still possible (e.g. with SSH RSA keys)
+
+To create an user without a password, use passwd -d user after the user is created to make the password empty. Note not all systems allow users with empty password to log in.
+
+
+
 # useradd
 -d  --home HOME_DIR  
     home dir.
