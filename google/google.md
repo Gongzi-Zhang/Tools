@@ -84,3 +84,6 @@ nytimes.com
 3: find proxy server:
     inurl:"nph-proxy.cgi" "Start browsing"
     "cacheserverreport for" "This analysis was produced by calamaris"
+
+video: something -inurl:(htm|html|php|pls|txt) intitle:index.of "last modified" (mkv|mp4|avi)
+audio: something -inurl:(htm|html|php|pls|txt) intitle:index.of "last modified" (mp3|wma|aac|flac)

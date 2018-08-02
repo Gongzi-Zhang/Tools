@@ -1,6 +1,6 @@
 arch	    : print machine hardware name (uname -m)
 dmesg	    : print the message buffer of the kernel
-dmidecode   : info from DMI interface from BIOS
+**dmidecode**   : info from DMI interface from BIOS
 hddtemp	    : check temp. of hard drive
 hwinfo	    : info for all the hardware
 lscpu	    : info about CPU
@@ -16,11 +16,23 @@ tput	    : change terminal characteristics
 tty	    : return user's terminal name
 
 
+# /proc
+CPU:	/proc/cpuinfo
+pci:	/proc/pci
+memory:	/proc/meminfo
+USB:	/proc/bus/usb/devices
+keyboard|mouse:   /proc/bus/input/devices
+IRQ:	/proc/interrupts
+disk:	/proc/partitions
+version:    /proc/version
+ioports:    /proc/ioports
+swap:	/proc/swaps
 
 
-uname -a               # 查看内核/操作系统/CPU信息
+# example
+dmidecode --type memory	# list memory device info
+
 head -n 1 /etc/issue   # 查看操作系统版本
-cat /proc/cpuinfo      # 查看CPU信息
 hostname               # 查看计算机名
 lsmod                  # 列出加载的内核模块
 free -m                # 查看内存使用量和交换区使用量
@@ -45,20 +57,12 @@ cut -d: -f1 /etc/passwd   # 查看系统所有用户
 cut -d: -f1 /etc/group    # 查看系统所有组
 chkconfig –list        # 列出所有系统服务
 chkconfig –list | grep on    # 列出所有启动的系统服务程序
-cat /proc/cpuinfo ：查看CPU相关参数
-cat /proc/partitions ：查看硬盘和分区
-cat /proc/meminfo ：查看内存信息
-cat /proc/version ：查看版本，类似uname -r
-cat /proc/ioports ：查看设备io端口
-cat /proc/interrupts ：查看中断
-cat /proc/pci ：查看pci设备的信息
-cat /proc/swaps ：查看所有swap分区的信息 
 
 该如何才能知道系统都有什么硬件设备，有如下几种方式：
 方式一：
 使用lsdev命令，可以显示系统中的设备及其特征。
 例如：lsdev -C
-但是一般的系统上可能没有这个命令，比如我装的fedora上面就没有这个命令。
+但是一般的系统上可能没有这个命令，比如fedora上面就没有这个命令。
 方法二：
 显示/proc/dev文件，这个文件记录了系统的一些硬件信息，
 例如：cat /proc/dev
@@ -71,67 +75,14 @@ Linux查看硬件信息及驱动设备
 
 用硬件检测程序kudzu探测新硬件：service kudzu start ( or restart)
 
-查看CPU信息：cat /proc/cpuinfo
-
-查看板卡信息：cat /proc/pci
-
-查看PCI信息：lspci (相比cat /proc/pci更直观)
-
-查看内存信息：cat/proc/meminfo
-
-查看USB设备：cat /proc/bus/usb/devices
-
-查看键盘和鼠标:cat/proc/bus/input/devices
-
-查看系统硬盘信息和使用情况：fdisk & disk- l & df
-
-查看各设备的中断请求(IRQ):cat/proc/interrupts
-
-查看系统体系结构：uname -a
-
-在LINUX环境开发驱动程序，首先要探测到新硬件，接下来就是开发驱动程序。
 
 常用命令整理如下：
-
-用硬件检测程序kudzu探测新硬件：service kudzu start ( or restart)
-
-查看CPU信息：cat /proc/cpuinfo
-
-查看板卡信息：cat /proc/pci
-
-查看PCI信息：lspci (相比cat /proc/pci更直观)
-
-查看内存信息：cat/proc/meminfo
-
-查看USB设备：cat /proc/bus/usb/devices
-
-查看键盘和鼠标:cat/proc/bus/input/devices
-
-查看系统硬盘信息和使用情况：fdisk & disk- l & df
-
-查看各设备的中断请求(IRQ):cat/proc/interrupts
-
-查看系统体系结构：uname -a
 
 dmidecode查看硬件信息，包括bios、cpu、内存等信息
 
 dmesg | more 查看硬件信息
 
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
 
-Cpuinfo 主机CPU信息
-
-Dma 主机DMA通道信息
-
-Filesystems 文件系统信息
-
-Interrupts 主机中断信息
-
-Ioprots 主机I/O端口号信息
-
-Meninfo 主机内存信息
-
-Version Linux内存版本信息
 
 显示PCI设备详细信息
 当前很多常用硬件都是PCI（Peripheral Component Interconnect）设备，如声卡、网卡、USB控制器等，稍老一点的显卡一般也是PCI设备。很可能由于要安装驱动或其它的需要查看PCI设备的详细信息。lspci命令方便地实现了这一点。 
