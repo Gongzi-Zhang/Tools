@@ -566,7 +566,7 @@ command='/usr/bin/chromium-browser'
 name='Chrome'
 
 [org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='on'
+numlock-state='off'
 
 [org/gnome/charmap/window-state]
 size=(768, 418)
@@ -619,7 +619,7 @@ encodings=['GB18030', 'GB2312', 'GBK', 'UTF-8']
 show-tabs-mode='auto'
 
 [org/gnome/gedit/plugins/filebrowser]
-virtual-root='file:///home/weibin/Code/Root'
+virtual-root='file:///media/weibin/8d8dcbfa-540f-4f5b-a8d3-83347c6a8dad/zhangweibin/Music/music%20of%20me/music'
 tree-view=true
 root='file:///'
 
@@ -641,7 +641,7 @@ window-is-maximized=true
 window-height=488
 
 [org/gnome/evince/default]
-window-ratio=(3.7647966706629736, 2.5760125824066793)
+window-ratio=(2.5497062051561552, 1.0052730226881947)
 continuous=true
 fullscreen=false
 show-sidebar=false
@@ -688,7 +688,7 @@ gtk-im-module='ibus'
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc']
 
 [org/gnome/desktop/notifications/application/telegramdesktop]
 application-id='telegramdesktop.desktop'
@@ -698,6 +698,9 @@ application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/virtualbox]
 application-id='virtualbox.desktop'
+
+[org/gnome/desktop/notifications/application/vlc]
+application-id='vlc.desktop'
 
 [org/gnome/desktop/notifications/application/wireshark]
 application-id='wireshark.desktop'
@@ -713,6 +716,9 @@ application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
+
+[org/gnome/desktop/notifications/application/chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1]
+application-id='chrome-gidgenkbbabolejbgbpnhbimgjbffefm-Profile_1.desktop'
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -802,7 +808,7 @@ secondary-color='#000000000000'
 [org/gnome/desktop/input-sources]
 xkb-options=@as []
 current=uint32 0
-mru-sources=[('ibus', 'pinyin'), ('xkb', 'us'), ('ibus', 'mozc-jp')]
+mru-sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 
 [org/gnome/sudoku]
@@ -819,7 +825,7 @@ photo-x-resolution=1280
 video-x-resolution=1280
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='keyboard'
 
 [org/gnome/libgnomekbd/preview]
 width=1049
@@ -846,8 +852,8 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 sidebar-width=196
-geometry='1024x510+248+176'
-maximized=true
+geometry='1024x495+162+230'
+maximized=false
 
 [org/gnome/nautilus/desktop]
 volumes-visible=false
@@ -900,7 +906,7 @@ col-6-visible=true
 col-6-width=0
 
 [org/gnome/software]
-check-timestamp=int64 1533130383
+check-timestamp=int64 1535816777
 
 [org/gnome/mutter/keybindings]
 toggle-tiled-right=['<Alt>l']
@@ -909,10 +915,10 @@ toggle-tiled-left=['<Alt>h']
 [org/gtk/settings/file-chooser]
 sort-column='name'
 sidebar-width=196
-window-position=(362, 214)
+window-position=(284, 214)
 show-size-column=true
 show-hidden=false
-window-size=(642, 326)
+window-size=(799, 326)
 sort-directories-first=true
 date-format='regular'
 sort-order='descending'
@@ -1056,7 +1062,7 @@ library-width=1024
 
 [apps/update-manager]
 first-run=false
-launch-time=int64 1532700141
+launch-time=int64 1535309904
 
 [apps/seahorse/windows/key-manager]
 width=640
@@ -1087,7 +1093,7 @@ text-scale-factor=1.0
 favorites=['application://org.gnome.Nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'unity://running-apps', 'application://gnome-chess.desktop', 'application://vinagre.desktop', 'application://gpredict.desktop', 'application://stellarium.desktop', 'unity://expo-icon', 'unity://devices']
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1532960861
+release-check-time=uint32 1535380839
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
