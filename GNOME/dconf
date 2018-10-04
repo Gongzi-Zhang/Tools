@@ -566,7 +566,7 @@ command='/usr/bin/chromium-browser'
 name='Chrome'
 
 [org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='off'
+numlock-state='on'
 
 [org/gnome/charmap/window-state]
 size=(768, 418)
@@ -619,7 +619,7 @@ encodings=['GB18030', 'GB2312', 'GBK', 'UTF-8']
 show-tabs-mode='auto'
 
 [org/gnome/gedit/plugins/filebrowser]
-virtual-root='file:///media/weibin/8d8dcbfa-540f-4f5b-a8d3-83347c6a8dad/zhangweibin/Music/music%20of%20me/music'
+virtual-root='file:///media/weibin/8d8dcbfa-540f-4f5b-a8d3-83347c6a8dad/zhangweibin/home'
 tree-view=true
 root='file:///'
 
@@ -641,7 +641,7 @@ window-is-maximized=true
 window-height=488
 
 [org/gnome/evince/default]
-window-ratio=(2.5497062051561552, 1.0052730226881947)
+window-ratio=(2.2947338713470722, 0.83265034624475887)
 continuous=true
 fullscreen=false
 show-sidebar=false
@@ -825,7 +825,7 @@ photo-x-resolution=1280
 video-x-resolution=1280
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='wifi'
 
 [org/gnome/libgnomekbd/preview]
 width=1049
@@ -852,7 +852,7 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 sidebar-width=196
-geometry='1024x495+162+230'
+geometry='1024x478+26+239'
 maximized=false
 
 [org/gnome/nautilus/desktop]
@@ -887,6 +887,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
+[org/gnome/nm-applet/eap/96d03a39-6336-4c79-8c13-3cd530aa0b1a]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
+
 [org/gnome/nm-applet/eap/cf06daea-3fab-4fe1-b336-5545e58bc070]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=true
@@ -906,7 +910,7 @@ col-6-visible=true
 col-6-width=0
 
 [org/gnome/software]
-check-timestamp=int64 1535816777
+check-timestamp=int64 1538400555
 
 [org/gnome/mutter/keybindings]
 toggle-tiled-right=['<Alt>l']
@@ -1062,7 +1066,7 @@ library-width=1024
 
 [apps/update-manager]
 first-run=false
-launch-time=int64 1535309904
+launch-time=int64 1538444930
 
 [apps/seahorse/windows/key-manager]
 width=640
@@ -1093,7 +1097,7 @@ text-scale-factor=1.0
 favorites=['application://org.gnome.Nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'unity://running-apps', 'application://gnome-chess.desktop', 'application://vinagre.desktop', 'application://gpredict.desktop', 'application://stellarium.desktop', 'unity://expo-icon', 'unity://devices']
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1535380839
+release-check-time=uint32 1537800677
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
