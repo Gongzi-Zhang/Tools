@@ -6,6 +6,9 @@
     ~word:  search for synonym
     ~word:  search for synonym without original word
     +I	force searching
+
+ : social network
+    @
 3: filetype
     filetype:txt 朝闻道
 4: graph
