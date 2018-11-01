@@ -1,3 +1,5 @@
+    List of google products: https://en.wikipedia.org/wiki/List_of_Google_products
+    List of google Easter eggs: https://en.wikipedia.org/wiki/List_of_Google_Easter_eggs#Embedded_tools
 # searching tips
 1: search only specified sites:
     site:zhihu.com  [keyname]
@@ -90,3 +92,10 @@ nytimes.com
 
 video: something -inurl:(htm|html|php|pls|txt) intitle:index.of "last modified" (mkv|mp4|avi)
 audio: something -inurl:(htm|html|php|pls|txt) intitle:index.of "last modified" (mp3|wma|aac|flac)
+
+# Easter eggs
+* text adverture --> F12 (Developter tools)
+
+
+# bugs
+* 在搜索引擎里(google) 搜索"不是橙色的水果",结果返回的都是橙色的水果，证明搜索引擎目前都是基于关键词，而不是语义搜索。
