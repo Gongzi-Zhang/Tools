@@ -566,7 +566,7 @@ command='/usr/bin/chromium-browser'
 name='Chrome'
 
 [org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='on'
+numlock-state='off'
 
 [org/gnome/charmap/window-state]
 size=(768, 418)
@@ -640,8 +640,11 @@ use-animations=true
 window-is-maximized=true
 window-height=488
 
+[org/gnome/evince]
+document-directory=@ms 'file:///home/weibin/SB/cource'
+
 [org/gnome/evince/default]
-window-ratio=(2.2947338713470722, 0.83265034624475887)
+window-ratio=(2.2320261437908497, 0.88510101010101006)
 continuous=true
 fullscreen=false
 show-sidebar=false
@@ -688,7 +691,7 @@ gtk-im-module='ibus'
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal']
 
 [org/gnome/desktop/notifications/application/telegramdesktop]
 application-id='telegramdesktop.desktop'
@@ -713,6 +716,9 @@ application-id='chromium-browser.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
 
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
@@ -808,7 +814,7 @@ secondary-color='#000000000000'
 [org/gnome/desktop/input-sources]
 xkb-options=@as []
 current=uint32 0
-mru-sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
+mru-sources=[('ibus', 'pinyin'), ('xkb', 'us'), ('ibus', 'mozc-jp')]
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 
 [org/gnome/sudoku]
@@ -852,7 +858,7 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 sidebar-width=196
-geometry='1024x478+26+239'
+geometry='1024x476+26+239'
 maximized=false
 
 [org/gnome/nautilus/desktop]
@@ -910,7 +916,7 @@ col-6-visible=true
 col-6-width=0
 
 [org/gnome/software]
-check-timestamp=int64 1538400555
+check-timestamp=int64 1541080112
 
 [org/gnome/mutter/keybindings]
 toggle-tiled-right=['<Alt>l']
@@ -1066,7 +1072,7 @@ library-width=1024
 
 [apps/update-manager]
 first-run=false
-launch-time=int64 1538444930
+launch-time=int64 1541035862
 
 [apps/seahorse/windows/key-manager]
 width=640
@@ -1097,7 +1103,7 @@ text-scale-factor=1.0
 favorites=['application://org.gnome.Nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'unity://running-apps', 'application://gnome-chess.desktop', 'application://vinagre.desktop', 'application://gpredict.desktop', 'application://stellarium.desktop', 'unity://expo-icon', 'unity://devices']
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1537800677
+release-check-time=uint32 1540220141
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
