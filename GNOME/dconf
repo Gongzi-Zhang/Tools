@@ -566,7 +566,7 @@ command='/usr/bin/chromium-browser'
 name='Chrome'
 
 [org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='off'
+numlock-state='on'
 
 [org/gnome/charmap/window-state]
 size=(768, 418)
@@ -641,7 +641,7 @@ window-is-maximized=true
 window-height=488
 
 [org/gnome/evince]
-document-directory=@ms 'file:///home/weibin/SB/cource'
+document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
 
 [org/gnome/evince/default]
 window-ratio=(2.2320261437908497, 0.88510101010101006)
@@ -831,7 +831,7 @@ photo-x-resolution=1280
 video-x-resolution=1280
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='display'
 
 [org/gnome/libgnomekbd/preview]
 width=1049
@@ -858,8 +858,8 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 sidebar-width=196
-geometry='1024x476+26+239'
-maximized=false
+geometry='1024x442+26+239'
+maximized=true
 
 [org/gnome/nautilus/desktop]
 volumes-visible=false
@@ -916,7 +916,7 @@ col-6-visible=true
 col-6-width=0
 
 [org/gnome/software]
-check-timestamp=int64 1541080112
+check-timestamp=int64 1543685239
 
 [org/gnome/mutter/keybindings]
 toggle-tiled-right=['<Alt>l']
@@ -927,7 +927,7 @@ sort-column='name'
 sidebar-width=196
 window-position=(284, 214)
 show-size-column=true
-show-hidden=false
+show-hidden=true
 window-size=(799, 326)
 sort-directories-first=true
 date-format='regular'
@@ -1072,7 +1072,7 @@ library-width=1024
 
 [apps/update-manager]
 first-run=false
-launch-time=int64 1541035862
+launch-time=int64 1543588071
 
 [apps/seahorse/windows/key-manager]
 width=640
@@ -1103,7 +1103,7 @@ text-scale-factor=1.0
 favorites=['application://org.gnome.Nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'unity://running-apps', 'application://gnome-chess.desktop', 'application://vinagre.desktop', 'application://gpredict.desktop', 'application://stellarium.desktop', 'unity://expo-icon', 'unity://devices']
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1540220141
+release-check-time=uint32 1542639752
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
