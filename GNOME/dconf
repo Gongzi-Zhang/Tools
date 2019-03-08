@@ -541,12 +541,17 @@ last-played-as='white'
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-enabled=false
+night-light-schedule-automatic=false
+night-light-schedule-to=5.0
+night-light-schedule-from=23.100000000000001
+night-light-enabled=true
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
 screenreader=''
 magnifier=''
 
@@ -565,8 +570,13 @@ binding='<Primary><Alt>c'
 command='/usr/bin/chromium-browser'
 name='Chrome'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Primary><Alt>f'
+command='/usr/bin/firefox'
+name='Firefox'
+
 [org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='on'
+numlock-state='off'
 
 [org/gnome/charmap/window-state]
 size=(768, 418)
@@ -600,11 +610,12 @@ prev-tab='<Primary><Shift>space'
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '460abf61-4cfd-4519-bf16-5d41d6571d17']
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-transparency-percent=23
+background-transparency-percent=9
 palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-theme-transparency=false
 foreground-color='rgb(255,255,255)'
 use-transparent-background=true
+visible-name='Weibin'
 use-theme-colors=false
 
 [org/gnome/terminal/legacy/profiles:/:460abf61-4cfd-4519-bf16-5d41d6571d17]
@@ -619,15 +630,15 @@ encodings=['GB18030', 'GB2312', 'GBK', 'UTF-8']
 show-tabs-mode='auto'
 
 [org/gnome/gedit/plugins/filebrowser]
-virtual-root='file:///media/weibin/8d8dcbfa-540f-4f5b-a8d3-83347c6a8dad/zhangweibin/home'
+virtual-root='file:///home/weibin/books/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6'
 tree-view=true
 root='file:///'
 
 [org/gnome/gedit/plugins]
-active-plugins=['docinfo', 'modelines', 'spell', 'time', 'filebrowser']
+active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
 
 [org/gnome/gedit/state/window]
-size=(900, 699)
+size=(900, 651)
 state=87168
 bottom-panel-size=140
 side-panel-size=200
@@ -642,9 +653,10 @@ window-height=488
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
+pictures-directory=@ms 'file:///home/weibin/SB/TA/figures'
 
 [org/gnome/evince/default]
-window-ratio=(2.2320261437908497, 0.88510101010101006)
+window-ratio=(2.149579831932773, 0.77407847800237817)
 continuous=true
 fullscreen=false
 show-sidebar=false
@@ -691,13 +703,22 @@ gtk-im-module='ibus'
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music']
 
 [org/gnome/desktop/notifications/application/telegramdesktop]
 application-id='telegramdesktop.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-language-selector]
+application-id='gnome-language-selector.desktop'
+
+[org/gnome/desktop/notifications/application/electronic-wechat-electronic-wechat]
+application-id='electronic-wechat_electronic-wechat.desktop'
+
+[org/gnome/desktop/notifications/application/netease-cloud-music]
+application-id='netease-cloud-music.desktop'
 
 [org/gnome/desktop/notifications/application/virtualbox]
 application-id='virtualbox.desktop'
@@ -717,11 +738,14 @@ application-id='chromium-browser.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
-[org/gnome/desktop/notifications/application/org-gnome-terminal]
-application-id='org.gnome.Terminal.desktop'
+[org/gnome/desktop/notifications/application/eog]
+application-id='eog.desktop'
 
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
 
 [org/gnome/desktop/notifications/application/chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1]
 application-id='chrome-gidgenkbbabolejbgbpnhbimgjbffefm-Profile_1.desktop'
@@ -756,14 +780,20 @@ apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop',
 name='X-GNOME-Sundry.directory'
 
 [org/gnome/desktop/screensaver]
-picture-uri='file:///home/weibin/.cache/gnome-control-center/backgrounds/laptop-wallpapers-quotes-high-quality-For-Widescreen-Wallpaper.jpg'
+picture-uri='file:///usr/share/backgrounds/Morning_by_Bernhard_Hanakam.jpg'
 color-shading-type='solid'
-primary-color='#000000000000'
+primary-color='#000000'
 picture-options='zoom'
-secondary-color='#000000000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 600
+idle-delay=uint32 0
 
 [org/gnome/desktop/wm/keybindings]
 move-to-workspace-left=['<Shift><Control><Alt>Left']
@@ -804,17 +834,21 @@ switch-to-workspace-up=['<Control><Alt>Up']
 close=['<Alt>F4']
 switch-windows=['disabled']
 
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=false
+
 [org/gnome/desktop/background]
-picture-uri='file:///home/weibin/.cache/gnome-control-center/backgrounds/ubuntu-16-04-wallpaper-03.jpg'
+picture-uri='file:///usr/share/backgrounds/Milky_Way_before_the_dawn_by_Tomas_Sobek.jpg'
 color-shading-type='solid'
-primary-color='#000000000000'
+primary-color='#000000'
 picture-options='zoom'
-secondary-color='#000000000000'
+secondary-color='#000000'
 
 [org/gnome/desktop/input-sources]
 xkb-options=@as []
+per-window=false
 current=uint32 0
-mru-sources=[('ibus', 'pinyin'), ('xkb', 'us'), ('ibus', 'mozc-jp')]
+mru-sources=[('ibus', 'pinyin'), ('xkb', 'us')]
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 
 [org/gnome/sudoku]
@@ -831,7 +865,7 @@ photo-x-resolution=1280
 video-x-resolution=1280
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='notifications'
 
 [org/gnome/libgnomekbd/preview]
 width=1049
@@ -858,7 +892,7 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 sidebar-width=196
-geometry='1024x442+26+239'
+geometry='1024x442+-135+112'
 maximized=true
 
 [org/gnome/nautilus/desktop]
@@ -880,6 +914,10 @@ window-maximized=false
 [org/gnome/nm-applet/eap/0005de07-6de6-4fc8-ab31-322745062b24]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
+
+[org/gnome/nm-applet/eap/dc8932fb-bd3f-4ba7-83a2-4dc6e7a6da04]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=true
 
 [org/gnome/nm-applet/eap/881b4a72-8963-4a60-987a-8d156680e158]
 ignore-phase2-ca-cert=false
@@ -907,16 +945,17 @@ active-plugins=['movie-properties', 'apple-trailers', 'save-file', 'screensaver'
 
 [org/gnome/gnome-system-monitor]
 show-dependencies=false
+cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8')]
 maximized=false
-show-whose-processes='user'
 window-state=(700, 500, 50, 50)
+show-whose-processes='user'
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
 col-6-width=0
 
 [org/gnome/software]
-check-timestamp=int64 1543685239
+check-timestamp=int64 1551448445
 
 [org/gnome/mutter/keybindings]
 toggle-tiled-right=['<Alt>l']
@@ -924,14 +963,14 @@ toggle-tiled-left=['<Alt>h']
 
 [org/gtk/settings/file-chooser]
 sort-column='name'
-sidebar-width=196
-window-position=(284, 214)
+sidebar-width=170
+window-position=(227, 115)
 show-size-column=true
-show-hidden=true
-window-size=(799, 326)
+show-hidden=false
+window-size=(825, 476)
 sort-directories-first=true
 date-format='regular'
-sort-order='descending'
+sort-order='ascending'
 location-mode='path-bar'
 
 [org/gtk/settings/color-chooser]
@@ -1072,7 +1111,8 @@ library-width=1024
 
 [apps/update-manager]
 first-run=false
-launch-time=int64 1543588071
+launch-time=int64 1551136924
+launch-count=9
 
 [apps/seahorse/windows/key-manager]
 width=640
@@ -1103,7 +1143,7 @@ text-scale-factor=1.0
 favorites=['application://org.gnome.Nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'unity://running-apps', 'application://gnome-chess.desktop', 'application://vinagre.desktop', 'application://gpredict.desktop', 'application://stellarium.desktop', 'unity://expo-icon', 'unity://devices']
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1542639752
+release-check-time=uint32 1551278160
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
