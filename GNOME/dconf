@@ -30,7 +30,7 @@ minimize-count=100
 
 [com/ubuntu/update-notifier]
 regular-auto-launch-interval=0
-release-check-time=uint32 1556747746
+release-check-time=uint32 1559170006
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -51,9 +51,12 @@ height=476
 sidebar-width=170
 
 [apps/update-manager]
-launch-time=int64 1556717825
-launch-count=24
+launch-time=int64 1559346352
+window-width=645
+show-details=true
+launch-count=47
 first-run=false
+window-height=400
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -61,11 +64,11 @@ show-size-column=true
 show-hidden=false
 sidebar-width=170
 sort-column='name'
-window-position=(227, 115)
+window-position=(227, 52)
 sort-order='ascending'
 location-mode='path-bar'
 sort-directories-first=true
-window-size=(825, 476)
+window-size=(825, 602)
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.0078431372549019607, 0.23529411764705882, 0.53333333333333333, 1.0), (0.0, 1.0, 0.0, 1.0)]
@@ -231,13 +234,13 @@ group-per-window=false
 [org/gnome/gnome-system-monitor]
 show-dependencies=false
 show-whose-processes='user'
-current-tab='disks'
+current-tab='resources'
 cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8')]
 maximized=true
 window-state=(1280, 652, 0, 27)
 
 [org/gnome/gnome-system-monitor/disktreenew]
-col-6-width=0
+col-6-width=870
 col-6-visible=true
 
 [org/gnome/eog/view]
@@ -270,7 +273,7 @@ window-state=128
 sizing-mode='fit-width'
 dual-page-odd-left=false
 fullscreen=false
-window-ratio=(2.0915032679738563, 0.82196969696969702)
+window-ratio=(2.0915032679738563, 0.8232323232323232)
 sidebar-size=226
 continuous=true
 inverted-colors=false
@@ -279,7 +282,7 @@ sidebar-page='links'
 show-sidebar=false
 
 [org/gnome/evince]
-pictures-directory=@ms 'file:///home/weibin/SB/CREX/figures'
+pictures-directory=@ms 'file:///home/weibin/SB/cource/Particle/muon_g-2/figures'
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
 
 [org/gnome/calendar]
@@ -300,7 +303,7 @@ window-height=600
 window-is-maximized=false
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center']
 
 [org/gnome/desktop/notifications/application/telegramdesktop]
 application-id='telegramdesktop.desktop'
@@ -314,17 +317,17 @@ application-id='virtualbox.desktop'
 [org/gnome/desktop/notifications/application/gnome-language-selector]
 application-id='gnome-language-selector.desktop'
 
-[org/gnome/desktop/notifications/application/slack-slack]
-application-id='slack_slack.desktop'
-
 [org/gnome/desktop/notifications/application/electronic-wechat-electronic-wechat]
 application-id='electronic-wechat_electronic-wechat.desktop'
+
+[org/gnome/desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-printers-panel]
 application-id='gnome-printers-panel.desktop'
 
-[org/gnome/desktop/notifications/application/apport-gtk]
-application-id='apport-gtk.desktop'
+[org/gnome/desktop/notifications/application/slack-slack]
+application-id='slack_slack.desktop'
 
 [org/gnome/desktop/notifications/application/chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1]
 application-id='chrome-gidgenkbbabolejbgbpnhbimgjbffefm-Profile_1.desktop'
@@ -332,32 +335,38 @@ application-id='chrome-gidgenkbbabolejbgbpnhbimgjbffefm-Profile_1.desktop'
 [org/gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
 
+[org/gnome/desktop/notifications/application/gnome-control-center]
+application-id='gnome-control-center.desktop'
+
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
-
-[org/gnome/desktop/notifications/application/vlc]
-application-id='vlc.desktop'
 
 [org/gnome/desktop/notifications/application/thunderbird]
 application-id='thunderbird.desktop'
 
-[org/gnome/desktop/notifications/application/chromium-browser]
-application-id='chromium-browser.desktop'
-
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
-[org/gnome/desktop/notifications/application/org-gnome-terminal]
-application-id='org.gnome.Terminal.desktop'
+[org/gnome/desktop/notifications/application/chromium-browser]
+application-id='chromium-browser.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-calculator-gnome-calculator]
+application-id='gnome-calculator_gnome-calculator.desktop'
 
 [org/gnome/desktop/notifications/application/wireshark]
 application-id='wireshark.desktop'
 
-[org/gnome/desktop/notifications/application/org-gnome-nautilus]
-application-id='org.gnome.Nautilus.desktop'
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/vlc]
+application-id='vlc.desktop'
 
 [org/gnome/desktop/notifications/application/netease-cloud-music]
 application-id='netease-cloud-music.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evince]
 application-id='org.gnome.Evince.desktop'
@@ -477,7 +486,27 @@ last-panel='wifi'
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
-[org/gnome/nm-applet/eap/8a06076a-b495-451f-b325-fc5afaf0017e]
+[org/gnome/nm-applet/eap/cf06daea-3fab-4fe1-b336-5545e58bc070]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/f96b9909-f3cc-484a-8643-9ca07420c172]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/6cf0fd6f-ac71-4176-b681-9c8f61ac8a9f]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/1cb4f278-4cea-4eb8-8905-27cd794ff958]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/1e6d3d06-1bfc-45cc-bedd-59e4b0272a05]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/96d03a39-6336-4c79-8c13-3cd530aa0b1a]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -485,16 +514,8 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
-[org/gnome/nm-applet/eap/6cf0fd6f-ac71-4176-b681-9c8f61ac8a9f]
+[org/gnome/nm-applet/eap/8a06076a-b495-451f-b325-fc5afaf0017e]
 ignore-ca-cert=false
-ignore-phase2-ca-cert=false
-
-[org/gnome/nm-applet/eap/96d03a39-6336-4c79-8c13-3cd530aa0b1a]
-ignore-ca-cert=false
-ignore-phase2-ca-cert=false
-
-[org/gnome/nm-applet/eap/cf06daea-3fab-4fe1-b336-5545e58bc070]
-ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/dc8932fb-bd3f-4ba7-83a2-4dc6e7a6da04]
@@ -517,7 +538,7 @@ base=10
 angle-units='degrees'
 accuracy=9
 show-thousands=false
-window-position=(38, 65)
+window-position=(115, 285)
 show-zeroes=false
 target-units='radian'
 number-format='automatic'
@@ -1130,7 +1151,7 @@ name-column-width=250
 show-path=false
 
 [org/gnome/software]
-check-timestamp=int64 1556717706
+check-timestamp=int64 1559401188
 
 [org/gnome/chess]
 width=700
