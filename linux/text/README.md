@@ -2,6 +2,7 @@
 Vim
 
 # Text processing
+column	    : formats its input into multiple columns
 cut	    : cut out selected fields of each line of a file
 diff	    : compare two files; see also cmp
 expand	    : convert tab to space; see also unexpand
