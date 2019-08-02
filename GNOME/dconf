@@ -1,10 +1,10 @@
 [com/github/babluboy/bookworm]
 library-view-mode='LIBRARY_MODE_GRID'
-book-being-read=''
+book-being-read='/home/weibin/SB/PREX/reports/20190617--raster_size.pdf'
 window-width=1280
 pos-x=0
 pos-y=27
-window-height=652
+window-height=650
 window-is-maximized=true
 
 [com/canonical/indicator/messages]
@@ -29,8 +29,8 @@ favorites=['application://org.gnome.Nautilus.desktop', 'application://firefox.de
 minimize-count=100
 
 [com/ubuntu/update-notifier]
-regular-auto-launch-interval=0
-release-check-time=uint32 1559170006
+regular-auto-launch-interval=7
+release-check-time=uint32 1564018973
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -51,10 +51,10 @@ height=476
 sidebar-width=170
 
 [apps/update-manager]
-launch-time=int64 1559346352
+launch-time=int64 1564241595
 window-width=645
 show-details=true
-launch-count=47
+launch-count=103
 first-run=false
 window-height=400
 
@@ -240,7 +240,7 @@ maximized=true
 window-state=(1280, 652, 0, 27)
 
 [org/gnome/gnome-system-monitor/disktreenew]
-col-6-width=870
+col-6-width=0
 col-6-visible=true
 
 [org/gnome/eog/view]
@@ -270,19 +270,20 @@ window-size=(960, 600)
 window-state=128
 
 [org/gnome/evince/default]
-sizing-mode='fit-width'
+enable-spellchecking=true
 dual-page-odd-left=false
 fullscreen=false
-window-ratio=(2.0915032679738563, 0.8232323232323232)
+window-ratio=(4.3243243243243246, 3.4680851063829787)
 sidebar-size=226
 continuous=true
 inverted-colors=false
 dual-page=false
-sidebar-page='links'
+sidebar-page='thumbnails'
+sizing-mode='fit-width'
 show-sidebar=false
 
 [org/gnome/evince]
-pictures-directory=@ms 'file:///home/weibin/SB/cource/Particle/muon_g-2/figures'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports'
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
 
 [org/gnome/calendar]
@@ -303,7 +304,7 @@ window-height=600
 window-is-maximized=false
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view']
 
 [org/gnome/desktop/notifications/application/telegramdesktop]
 application-id='telegramdesktop.desktop'
@@ -353,14 +354,17 @@ application-id='chromium-browser.desktop'
 [org/gnome/desktop/notifications/application/gnome-calculator-gnome-calculator]
 application-id='gnome-calculator_gnome-calculator.desktop'
 
-[org/gnome/desktop/notifications/application/wireshark]
-application-id='wireshark.desktop'
+[org/gnome/desktop/notifications/application/vmware-view]
+application-id='vmware-view.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
 
 [org/gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
+
+[org/gnome/desktop/notifications/application/wireshark]
+application-id='wireshark.desktop'
 
 [org/gnome/desktop/notifications/application/netease-cloud-music]
 application-id='netease-cloud-music.desktop'
@@ -384,7 +388,7 @@ two-finger-scrolling-enabled=true
 unmaximize=['<Control><Super>Down']
 minimize=['<Alt>0']
 move-to-workspace-right=['<Shift><Control><Alt>Right']
-move-to-workspace-up=['<Shift><Control><Alt>Up']
+move-to-workspace-up=['<Alt>k']
 switch-to-workspace-11=['disabled']
 begin-move=['<Alt>F7']
 switch-to-workspace-up=['<Control><Alt>Up']
@@ -403,7 +407,7 @@ switch-to-workspace-right=['<Control><Alt>Right']
 switch-windows-backward=['disabled']
 switch-to-workspace-7=['disabled']
 switch-to-workspace-2=['disabled']
-maximize-vertically=['disabled']
+maximize-vertically=['<Alt>v']
 lower=['<Alt>j']
 move-to-workspace-down=['<Shift><Control><Alt>Down']
 switch-to-workspace-8=['disabled']
@@ -411,7 +415,7 @@ show-desktop=@as []
 move-to-monitor-down=['<Shift><Super>Down']
 switch-to-workspace-3=['disabled']
 raise=['<Alt>k']
-close=['<Alt>F4']
+close=['<Primary>q']
 toggle-shaded=['<Control><Alt>s']
 switch-to-workspace-9=['disabled']
 switch-to-workspace-left=['<Control><Alt>Left']
@@ -480,7 +484,7 @@ sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 idle-delay=uint32 0
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='info-overview'
 
 [org/gnome/nm-applet/eap/881b4a72-8963-4a60-987a-8d156680e158]
 ignore-ca-cert=true
@@ -538,7 +542,7 @@ base=10
 angle-units='degrees'
 accuracy=9
 show-thousands=false
-window-position=(115, 285)
+window-position=(344, 367)
 show-zeroes=false
 target-units='radian'
 number-format='automatic'
@@ -1115,7 +1119,7 @@ path='/home/weibin/deja-dup'
 
 [org/gnome/gedit/plugins/filebrowser]
 tree-view=true
-virtual-root='file:///home/weibin/Documents/live-in-future'
+virtual-root='file:///home/weibin/Tools/linux/text'
 root='file:///'
 
 [org/gnome/gedit/plugins]
@@ -1151,7 +1155,7 @@ name-column-width=250
 show-path=false
 
 [org/gnome/software]
-check-timestamp=int64 1559401188
+check-timestamp=int64 1564660948
 
 [org/gnome/chess]
 width=700
