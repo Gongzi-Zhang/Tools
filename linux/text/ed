@@ -1,0 +1,38 @@
+!command    :: Execute a shell command
+$	    :: Go to the last line in the buffer
+%	    :: Apply the command that follows to all lines in the buffer (for example, %p prints all lines)
++	    :: Go to the next line
++n	    :: Go to nth next line (n is a number)
+,	    :: Apply the command that follows to all lines in the buffer (for example, ,p prints all lines); similar to %
+-	    :: Go to the preceding line
+-n	    :: Go to nth previous line (n is a number)
+.	    :: Refer to the current line in the buffer
+/regex/	    :: Search forward for the specified regular expression 
+;	    :: Refer to a range of line (if you specify no line numbers, the editor assumes current through last line in the buffer)
+=	    :: Print the line number
+?regex?	    :: Search backward for the specified regular expression 
+^	    :: Go to the preceding line; also see the - command
+^n	    :: Go to the nth previous line (where n is a number); see also the -n command
+a	    :: Append after the current line
+c	    :: Change the specified lines
+d	    :: Delete the specified lines
+e file	    :: Edit the file
+f file	    :: Change the default filename
+h	    :: Display an explanation of the last error
+H	    :: Turn on verbose-mode error reporting
+i	    :: Insert text before the current line
+j	    :: Join contiguous lines
+kx	    :: Mark the line with letter x (later, you can refer to the line as ‘x)
+l	    :: Print (display) lines
+m	    :: Move lines
+n	    :: Go to line number n
+newline	    :: Display the next line and make that line current
+P	    :: Toggle prompt mode on or off
+q	    :: Quit the editor
+Q	    :: Quit the editor without saving changes
+r file	    :: Read and insert the contents of the file after the current line
+s/old/new/  :: Replace old string with new
+Space n	    :: A space, followed by n; nth next line (n is a number)
+u	    :: Undo the last command
+W file	    :: Append the contents of the buffer to the end of the specified file
+w file	    :: Save the buffer in the specified file (if you name no file, ed saves it in the default file—the file whose contents ed is currently editing)
