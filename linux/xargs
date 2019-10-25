@@ -3,6 +3,9 @@
 # assembling the commands themselves. It breaks a data stream into 
 # small chunks for filters and commands to process. 
 #
+# Some Unix commands doesn't read stdin, there is where xargs come to 
+# playing, which will transform stdout from previous pipe into arguments.
+#
 # The default command for xargs is 'echo'.
 
 xargs is intended to deal with very long option for some command, but
@@ -15,24 +18,32 @@ file's name longer than 30 chars.
     allow handling arguments containing whitespace or quotes
     in combination with find -print0 or grep -lZ
     i.e.
-    find . -type f -print0 | xargs -0 grep -liwZ GUI | xargs -0 rm -f
-    grep -rliwZ GUI . | xargs -0 rm -f
--P N
+    > find . -type f -print0 | xargs -0 grep -liwZ GUI | xargs -0 rm -f
+    > grep -rliwZ GUI . | xargs -0 rm -f
+-P (--max-process) N
     Parallel process, run up to N processes simultaneously
 -i
     i is the replace strings option
 -d  '\n'
     set delimiter as '\n', to allow xargs to deal with line-records.
+-L N
+    sometimes, stdin includes multi-lines, this option limits number of lines passed as argument for each execusion
+    > echo -e "a\nb\nc" | xargs -L 1 echo
 -n N
-    limits to N the number of arguments passed
-    ls | xargs -n 8 echo
-    echo {0..9} | xargs -n 2
+    limits to N arguments passed for each execusion
+    > ls | xargs -n 8 echo
+    > echo {0..9} | xargs -n 2
 -p
-    prompt for command
+    print out command for valification
 -t
-    verbose; print command to stderr
+    just print out command, without valification
 {}
     as in find, {} serves as a placeholder for replacement text
     i.e.
-    ls . | xargs -i -t cp ./{} $DES_DIR
+    > ls . | xargs -i -t cp ./{} $DES_DIR
+-I arg_name
+    when we need to used argument multi-times, we need to name it with this option
+    > cat file | xargs -I file_name sh -c 'echo file_name; touch file_name'
+    pass the argument as file_name, and then use it in following shell commands
+    
 
