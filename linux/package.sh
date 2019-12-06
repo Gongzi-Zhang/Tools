@@ -20,12 +20,14 @@ dpkg -x PACKAGE_NAME
 
 
 # show package info (details)
-dpkg -I PACKAGE_NAME
-dpkg -p PACKAGE_NAME
+dpkg -I PACKAGE_NAME.deb
+dpkg -p PACKAGE_NAME.deb
 # show the content
-dpkg -c PACKAGE_NAME
-# search which package a file belongs to
+dpkg -c PACKAGE_NAME.deb
+dpkg-query -L PACKAGE_NAME
+# search which package a file belongs to: note here the search pattern is a file, not a command
 dpkg -S /bin/cat
+dpkg -S `which cat`
 # to see where a package is installed on your Ubuntu
 dpkg -L PACKAGE_NAME 
 dpkg -l | grep <keyword>    # search for some packages
