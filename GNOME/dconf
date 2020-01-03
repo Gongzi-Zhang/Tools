@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=121
-launch-time=int64 1574779125
+launch-count=125
+launch-time=int64 1577288918
 show-details=true
 window-height=400
 window-width=645
@@ -45,7 +45,7 @@ window-width=1280
 
 [com/ubuntu/update-notifier]
 regular-auto-launch-interval=7
-release-check-time=uint32 1574308155
+release-check-time=uint32 1576729060
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -225,7 +225,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='info-overview'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -259,7 +259,7 @@ show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('xkb', 'us'), ('ibus', 'pinyin')]
+mru-sources=[('ibus', 'pinyin'), ('xkb', 'us')]
 per-window=false
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 xkb-options=@as []
@@ -279,7 +279,7 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -322,6 +322,9 @@ application-id='gnome-printers-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-system-monitor-gnome-system-monitor]
 application-id='gnome-system-monitor_gnome-system-monitor.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-system-monitor]
+application-id='gnome-system-monitor.desktop'
 
 [org/gnome/desktop/notifications/application/netease-cloud-music]
 application-id='netease-cloud-music.desktop'
@@ -442,7 +445,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.5270227591906946, 0.16748031215479456)
+window-ratio=(0.94460138124252946, 0.77530445088015854)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -1171,7 +1174,7 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1575214989
+check-timestamp=int64 1577893539
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1225,7 +1228,7 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=170
+sidebar-width=363
 sort-column='modified'
 sort-directories-first=true
 sort-order='descending'
