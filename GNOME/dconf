@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=125
-launch-time=int64 1577288918
+launch-count=129
+launch-time=int64 1580274797
 show-details=true
 window-height=400
 window-width=645
@@ -44,8 +44,9 @@ window-is-maximized=true
 window-width=1280
 
 [com/ubuntu/update-notifier]
+no-show-notifications=true
 regular-auto-launch-interval=7
-release-check-time=uint32 1576729060
+release-check-time=uint32 1580358766
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -225,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='info-overview'
+last-panel='bluetooth'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -259,7 +260,7 @@ show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('ibus', 'pinyin'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('ibus', 'pinyin')]
 per-window=false
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 xkb-options=@as []
@@ -445,7 +446,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(0.94460138124252946, 0.77530445088015854)
+window-ratio=(1.5261437908496731, 0.65404040404040409)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -469,7 +470,7 @@ active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/weibin/Tools/linux/text'
+virtual-root='file:///home/weibin'
 
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
@@ -604,7 +605,7 @@ info-stats-type='discharge-accuracy'
 numlock-state='off'
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-enabled=true
+night-light-enabled=false
 night-light-schedule-automatic=false
 night-light-schedule-from=23.100000000000001
 night-light-schedule-to=5.0
@@ -642,6 +643,7 @@ sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop']
+had-bluetooth-devices-setup=true
 
 [org/gnome/shell/apps/seahorse/listing]
 sidebar-width=148
@@ -1174,7 +1176,7 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1577893539
+check-timestamp=int64 1580562733
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1233,8 +1235,8 @@ sort-column='modified'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(227, 52)
-window-size=(825, 602)
+window-position=(182, 52)
+window-size=(916, 602)
 
 [org/yorba/shotwell/preferences/ui]
 display-basic-properties=true
