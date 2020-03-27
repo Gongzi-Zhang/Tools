@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=129
-launch-time=int64 1580274797
+launch-count=134
+launch-time=int64 1583079104
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=true
 regular-auto-launch-interval=7
-release-check-time=uint32 1580358766
+release-check-time=uint32 1582781861
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -446,7 +446,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.5261437908496731, 0.65404040404040409)
+window-ratio=(1.7516339869281046, 0.75631313131313127)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -597,8 +597,8 @@ window-size=[800, 500]
 
 [org/gnome/power-manager]
 info-history-type='charge'
-info-last-device='/org/freedesktop/UPower/devices/battery_BAT0'
-info-page-number=2
+info-last-device='/org/freedesktop/UPower/devices/line_power_AC'
+info-page-number=0
 info-stats-type='discharge-accuracy'
 
 [org/gnome/settings-daemon/peripherals/keyboard]
@@ -1176,7 +1176,7 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1580562733
+check-timestamp=int64 1583076963
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1233,7 +1233,7 @@ show-type-column=true
 sidebar-width=363
 sort-column='modified'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
 window-position=(182, 52)
 window-size=(916, 602)
