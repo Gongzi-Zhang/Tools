@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=134
-launch-time=int64 1583079104
+launch-count=138
+launch-time=int64 1585649839
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=true
 regular-auto-launch-interval=7
-release-check-time=uint32 1582781861
+release-check-time=uint32 1585201773
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -226,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='display'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -433,7 +433,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/materials'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/CREX'
 
 [org/gnome/evince/default]
 continuous=true
@@ -446,7 +446,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.7516339869281046, 0.75631313131313127)
+window-ratio=(0.76944444444444449, 0.41296296296296298)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -497,7 +497,7 @@ current-tab='resources'
 maximized=true
 show-dependencies=false
 show-whose-processes='user'
-window-state=(1280, 652, 0, 27)
+window-state=(1920, 1012, 0, 27)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -643,7 +643,7 @@ sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop']
-had-bluetooth-devices-setup=true
+had-bluetooth-devices-setup=false
 
 [org/gnome/shell/apps/seahorse/listing]
 sidebar-width=148
@@ -693,6 +693,7 @@ lookup-table-orientation=0
 
 [org/gnome/shell/extensions/dash-to-dock]
 autohide=false
+dash-max-icon-size=34
 dock-fixed=false
 dock-position='BOTTOM'
 intellihide=false
@@ -1176,7 +1177,7 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1583076963
+check-timestamp=int64 1585736125
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1231,11 +1232,11 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=363
-sort-column='modified'
+sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(182, 52)
+window-position=(502, 232)
 window-size=(916, 602)
 
 [org/yorba/shotwell/preferences/ui]
