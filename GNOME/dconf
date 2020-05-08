@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=138
-launch-time=int64 1585649839
+launch-count=142
+launch-time=int64 1588244105
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=true
 regular-auto-launch-interval=7
-release-check-time=uint32 1585201773
+release-check-time=uint32 1587621422
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -433,7 +433,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/CREX'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/AT'
 
 [org/gnome/evince/default]
 continuous=true
@@ -446,7 +446,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(0.76944444444444449, 0.41296296296296298)
+window-ratio=(1.7516339869281046, 0.75631313131313127)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -483,7 +483,7 @@ bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(900, 651)
-state=87168
+state=43908
 
 [org/gnome/gnome-screenshot]
 border-effect='none'
@@ -1177,7 +1177,7 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1585736125
+check-timestamp=int64 1588338120
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
