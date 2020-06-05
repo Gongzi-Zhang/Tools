@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=142
-launch-time=int64 1588244105
+launch-count=146
+launch-time=int64 1590574416
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=true
 regular-auto-launch-interval=7
-release-check-time=uint32 1587621422
+release-check-time=uint32 1590041309
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -54,7 +54,7 @@ scale-factor={'LVDS-1': 8}
 [desktop/ibus/general]
 engines-order=['xkb:us::eng', 'pinyin', 'bopomofo']
 preload-engines=['xkb:us::eng', 'pinyin', 'bopomofo']
-version='1.5.21'
+version='1.5.22'
 
 [desktop/ibus/panel]
 lookup-table-orientation=0
@@ -253,9 +253,9 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/Ubuntu_80s_glitch_by_Abubakar_NK.jpg'
-primary-color='#000000'
-secondary-color='#000000'
+picture-uri='file:///home/weibin/.local/share/backgrounds/2019-11-05-10-06-35-flying_fire_wheel.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
@@ -270,6 +270,7 @@ cursor-blink-time=1461
 cursor-size=24
 enable-animations=true
 gtk-im-module='ibus'
+gtk-theme='Yaru-dark'
 scaling-factor=uint32 1
 text-scaling-factor=1.0
 toolkit-accessibility=false
@@ -280,7 +281,8 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software']
+show-banners=true
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -345,6 +347,12 @@ application-id='org.gnome.Terminal.desktop'
 [org/gnome/desktop/notifications/application/slack-slack]
 application-id='slack_slack.desktop'
 
+[org/gnome/desktop/notifications/application/snap-store-snap-store]
+application-id='snap-store_snap-store.desktop'
+
+[org/gnome/desktop/notifications/application/snap-store-ubuntu-software]
+application-id='snap-store_ubuntu-software.desktop'
+
 [org/gnome/desktop/notifications/application/telegramdesktop]
 application-id='telegramdesktop.desktop'
 
@@ -375,9 +383,9 @@ disable-microphone=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/Sunset_of_Peloponnesus_by_Simos_Xenitellis.jpg'
-primary-color='#000000'
-secondary-color='#000000'
+picture-uri='file:///home/weibin/.local/share/backgrounds/2019-11-05-10-06-35-flying_fire_wheel.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -446,7 +454,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.7516339869281046, 0.75631313131313127)
+window-ratio=(2.257495590828924, 1.6019656019656019)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -470,7 +478,7 @@ active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/weibin'
+virtual-root='file:///home/weibin/Downloads'
 
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
@@ -543,7 +551,7 @@ search-view='list-view'
 [org/gnome/nautilus/window-state]
 geometry='1024x442+-135+112'
 maximized=true
-sidebar-width=196
+sidebar-width=223
 
 [org/gnome/nm-applet/eap/0005de07-6de6-4fc8-ab31-322745062b24]
 ignore-ca-cert=false
@@ -1177,7 +1185,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1588338120
+check-timestamp=int64 1591006399
+online-updates-timestamp=int64 1591006401
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1234,7 +1243,7 @@ show-type-column=true
 sidebar-width=363
 sort-column='name'
 sort-directories-first=true
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 window-position=(502, 232)
 window-size=(916, 602)
