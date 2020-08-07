@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=150
-launch-time=int64 1593082340
+launch-count=155
+launch-time=int64 1596303650
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=true
 regular-auto-launch-interval=7
-release-check-time=uint32 1592461275
+release-check-time=uint32 1596091148
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -199,7 +199,7 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(2546, 663)
+window-position=(636, 771)
 word-size=64
 
 [org/gnome/calendar]
@@ -281,7 +281,7 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/apport-gtk]
@@ -304,6 +304,9 @@ application-id='eog.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gimp]
+application-id='gimp.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-calculator-gnome-calculator]
 application-id='gnome-calculator_gnome-calculator.desktop'
@@ -444,7 +447,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/AT'
 
 [org/gnome/evince/default]
 continuous=true
@@ -457,7 +460,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(2.4610267437172419, 1.0785256981315849)
+window-ratio=(2.4268077601410933, 1.2776412776412776)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -1249,8 +1252,8 @@ sort-column='name'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(502, 232)
-window-size=(916, 602)
+window-position=(459, 226)
+window-size=(1002, 613)
 
 [org/yorba/shotwell/preferences/ui]
 display-basic-properties=true
