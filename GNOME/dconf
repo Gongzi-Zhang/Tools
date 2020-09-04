@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=155
-launch-time=int64 1596303650
+launch-count=158
+launch-time=int64 1598522722
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=true
 regular-auto-launch-interval=7
-release-check-time=uint32 1596091148
+release-check-time=uint32 1598510540
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -226,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='user-accounts'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -380,6 +380,9 @@ application-id='wireshark.desktop'
 [org/gnome/desktop/notifications/application/xdg-desktop-portal-gtk]
 application-id='xdg-desktop-portal-gtk.desktop'
 
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
 
@@ -447,7 +450,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/AT'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/materials'
 
 [org/gnome/evince/default]
 continuous=true
@@ -460,7 +463,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(2.4268077601410933, 1.2776412776412776)
+window-ratio=(1.4827676492069399, 0.82314810051226273)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -708,10 +711,11 @@ lookup-table-orientation=0
 
 [org/gnome/shell/extensions/dash-to-dock]
 autohide=false
-dash-max-icon-size=34
+dash-max-icon-size=16
 dock-fixed=false
 dock-position='BOTTOM'
 intellihide=false
+preferred-monitor=0
 
 [org/gnome/shell/extensions/desktop-icons]
 show-home=false
@@ -1252,7 +1256,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(459, 226)
+window-position=(139, 46)
 window-size=(1002, 613)
 
 [org/yorba/shotwell/preferences/ui]
