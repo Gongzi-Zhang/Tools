@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=158
-launch-time=int64 1598522722
+launch-count=163
+launch-time=int64 1601178879
 show-details=true
 window-height=400
 window-width=645
@@ -44,9 +44,9 @@ window-is-maximized=true
 window-width=1280
 
 [com/ubuntu/update-notifier]
-no-show-notifications=true
+no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1598510540
+release-check-time=uint32 1600956952
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -199,7 +199,7 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(636, 771)
+window-position=(552, 372)
 word-size=64
 
 [org/gnome/calendar]
@@ -226,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='user-accounts'
+last-panel='power'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -450,7 +450,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/materials'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/hall-A/collections'
 
 [org/gnome/evince/default]
 continuous=true
@@ -487,7 +487,7 @@ active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/weibin'
+virtual-root='file:///home/weibin/tmp/apache2/mods-available'
 
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
@@ -514,7 +514,7 @@ current-tab='resources'
 maximized=true
 show-dependencies=false
 show-whose-processes='user'
-window-state=(1920, 1012, 0, 27)
+window-state=(1280, 652, 0, 27)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -661,7 +661,7 @@ sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop']
-had-bluetooth-devices-setup=true
+had-bluetooth-devices-setup=false
 
 [org/gnome/shell/apps/seahorse/listing]
 sidebar-width=148
@@ -1256,7 +1256,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(139, 46)
+window-position=(0, 46)
 window-size=(1002, 613)
 
 [org/yorba/shotwell/preferences/ui]
