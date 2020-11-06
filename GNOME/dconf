@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=163
-launch-time=int64 1601178879
+launch-count=166
+launch-time=int64 1603882831
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1600956952
+release-check-time=uint32 1603376540
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -199,7 +199,7 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(552, 372)
+window-position=(522, 106)
 word-size=64
 
 [org/gnome/calendar]
@@ -226,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='printers'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -260,7 +260,7 @@ show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('xkb', 'us'), ('ibus', 'pinyin')]
+mru-sources=[('ibus', 'pinyin'), ('xkb', 'us')]
 per-window=false
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 xkb-options=@as []
@@ -281,7 +281,7 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/apport-gtk]
@@ -334,6 +334,9 @@ application-id='gnome-system-monitor.desktop'
 
 [org/gnome/desktop/notifications/application/netease-cloud-music]
 application-id='netease-cloud-music.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-eog]
+application-id='org.gnome.eog.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evince]
 application-id='org.gnome.Evince.desktop'
@@ -450,7 +453,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/hall-A/collections'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX'
 
 [org/gnome/evince/default]
 continuous=true
@@ -463,7 +466,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.4827676492069399, 0.82314810051226273)
+window-ratio=(1.5931372549019607, 0.82196969696969702)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -1256,7 +1259,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(0, 46)
+window-position=(139, 46)
 window-size=(1002, 613)
 
 [org/yorba/shotwell/preferences/ui]
