@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=166
-launch-time=int64 1603882831
+launch-count=170
+launch-time=int64 1606756438
 show-details=true
 window-height=400
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1603376540
+release-check-time=uint32 1605796094
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -199,7 +199,7 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(522, 106)
+window-position=(72, 193)
 word-size=64
 
 [org/gnome/calendar]
@@ -260,7 +260,7 @@ show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('ibus', 'pinyin'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('ibus', 'pinyin')]
 per-window=false
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 xkb-options=@as []
@@ -452,8 +452,8 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/gnome/evince]
-document-directory=@ms 'file:///home/weibin/SB/cource/Solid_State'
-pictures-directory=@ms 'file:///home/weibin/SB/PREX'
+document-directory=@ms nothing
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/reports/figures/pcrex'
 
 [org/gnome/evince/default]
 continuous=true
@@ -466,7 +466,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.5931372549019607, 0.82196969696969702)
+window-ratio=(1.0457516339869282, 0.8232323232323232)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -490,7 +490,7 @@ active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/weibin/tmp/apache2/mods-available'
+virtual-root='file:///media/weibin/0498-070C'
 
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
@@ -517,7 +517,7 @@ current-tab='resources'
 maximized=true
 show-dependencies=false
 show-whose-processes='user'
-window-state=(1280, 652, 0, 27)
+window-state=(1280, 646, 0, 27)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -664,7 +664,7 @@ sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop']
-had-bluetooth-devices-setup=false
+had-bluetooth-devices-setup=true
 
 [org/gnome/shell/apps/seahorse/listing]
 sidebar-width=148
@@ -1259,7 +1259,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(139, 46)
+window-position=(139, 43)
 window-size=(1002, 613)
 
 [org/yorba/shotwell/preferences/ui]
