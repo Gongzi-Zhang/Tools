@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=173
-launch-time=int64 1609024506
+launch-count=178
+launch-time=int64 1611775495
 show-details=true
 window-height=459
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1609425931
+release-check-time=uint32 1611845524
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -226,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='info-overview'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -466,7 +466,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.7569607793146411, 0.82324838745303286)
+window-ratio=(2.4150326797385619, 1.1325757575757576)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -1204,8 +1204,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1593397524
-online-updates-timestamp=int64 1593397526
+check-timestamp=int64 1612192245
+online-updates-timestamp=int64 1611775581
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
