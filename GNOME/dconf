@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=192
-launch-time=int64 1619866284
+launch-count=196
+launch-time=int64 1622552524
 show-details=true
 window-height=479
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1619104710
+release-check-time=uint32 1621524223
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -199,7 +199,7 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(302, 469)
+window-position=(1042, 676)
 word-size=64
 
 [org/gnome/calendar]
@@ -226,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='info-overview'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -281,7 +281,7 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk', 'brave-brave']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/apport-gtk]
@@ -289,6 +289,9 @@ application-id='apport-gtk.desktop'
 
 [org/gnome/desktop/notifications/application/baidunetdisk]
 application-id='baidunetdisk.desktop'
+
+[org/gnome/desktop/notifications/application/brave-brave]
+application-id='brave_brave.desktop'
 
 [org/gnome/desktop/notifications/application/chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1]
 application-id='chrome-gidgenkbbabolejbgbpnhbimgjbffefm-Profile_1.desktop'
@@ -475,7 +478,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='fit-width'
-window-ratio=(1.5686274509803921, 1.2702020202020201)
+window-ratio=(1.5925925925925926, 1.0811808118081181)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -1213,8 +1216,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1619866113
-online-updates-timestamp=int64 1619866115
+check-timestamp=int64 1622544254
+online-updates-timestamp=int64 1622544256
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
