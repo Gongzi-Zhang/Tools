@@ -7,8 +7,8 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=196
-launch-time=int64 1622552524
+launch-count=200
+launch-time=int64 1625050276
 show-details=true
 window-height=479
 window-width=645
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1621524223
+release-check-time=uint32 1625154264
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -226,7 +226,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='info-overview'
+last-panel='wifi'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -260,7 +260,7 @@ show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('ibus', 'pinyin'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('ibus', 'pinyin')]
 per-window=false
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 xkb-options=@as []
@@ -465,7 +465,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms nothing
-pictures-directory=@ms nothing
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/materials'
 
 [org/gnome/evince/default]
 continuous=true
@@ -477,8 +477,9 @@ inverted-colors=false
 show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
-sizing-mode='fit-width'
-window-ratio=(1.5925925925925926, 1.0811808118081181)
+sizing-mode='free'
+window-ratio=(2.6470588235294117, 1.1325757575757576)
+zoom=1.1285068273566832
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -579,7 +580,7 @@ search-view='list-view'
 
 [org/gnome/nautilus/window-state]
 geometry='1024x442+-135+112'
-initial-size=(890, 550)
+initial-size=(916, 576)
 maximized=false
 sidebar-width=223
 
@@ -595,8 +596,32 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/254d4a62-3eae-479b-ad41-a38bac60286f]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/34f9f03d-dd1b-42e4-9e2a-d40f002d7cdb]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/36fdef10-d6fc-4d43-a92d-71d69461f313]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/42a7891d-15e5-4af4-920b-c4044b5f3b79]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/57cca5bc-463d-49ae-8015-3c5cc0833434]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/6cf0fd6f-ac71-4176-b681-9c8f61ac8a9f]
 ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/72a10361-80bf-4cf2-bbaa-a013cd07dbe2]
+ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/881b4a72-8963-4a60-987a-8d156680e158]
@@ -612,6 +637,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/cf06daea-3fab-4fe1-b336-5545e58bc070]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/cfa7b7e7-da63-4add-970b-bdc941dda80b]
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
@@ -1216,8 +1245,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1622544254
-online-updates-timestamp=int64 1622544256
+check-timestamp=int64 1625134559
+online-updates-timestamp=int64 1625134561
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1271,13 +1300,13 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=323
+sidebar-width=161
 sort-column='name'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
-window-position=(459, 223)
-window-size=(1002, 613)
+window-position=(491, 189)
+window-size=(938, 682)
 
 [org/yorba/shotwell/preferences/ui]
 display-basic-properties=true
