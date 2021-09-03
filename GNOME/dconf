@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1627588041
+release-check-time=uint32 1630008205
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -58,6 +58,9 @@ version='1.5.22'
 
 [desktop/ibus/panel]
 lookup-table-orientation=0
+
+[desktop/ibus/panel/emoji]
+favorites=['Í']
 
 [org/compiz]
 current-profile='unity'
@@ -468,7 +471,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms nothing
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/materials'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/hrs/work/figure'
 
 [org/gnome/evince/default]
 continuous=true
@@ -481,7 +484,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='free'
-window-ratio=(2.6458307495142424, 3.696816915693466)
+window-ratio=(3.3899706478151228, 2.954513717910086)
 zoom=1.1285068273566832
 
 [org/gnome/evolution-data-server]
@@ -621,6 +624,10 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/6cf0fd6f-ac71-4176-b681-9c8f61ac8a9f]
 ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/6fd66105-f85c-419a-8801-08673e45f98b]
+ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/72a10361-80bf-4cf2-bbaa-a013cd07dbe2]
@@ -1248,8 +1255,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1627812365
-online-updates-timestamp=int64 1627812367
+check-timestamp=int64 1630491914
+online-updates-timestamp=int64 1630491916
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1304,7 +1311,7 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=170
-sort-column='name'
+sort-column='modified'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
