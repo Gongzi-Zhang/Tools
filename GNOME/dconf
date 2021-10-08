@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1630008205
+release-check-time=uint32 1632427820
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -182,6 +182,9 @@ arrow-base-color='#e6e6e6d9'
 arrow-shadow-color='#dcdcdcd9'
 thumb-highlight-gradient-shadow-color='#dfdfdfff'
 
+[org/freedesktop/tracker/miner/files]
+low-disk-space-limit=1
+
 [org/gnome/Totem]
 active-plugins=['movie-properties', 'apple-trailers', 'save-file', 'screensaver', 'screenshot', 'vimeo', 'autoload-subtitles', 'skipto', 'media_player_keys', 'recent']
 subtitle-encoding='UTF-8'
@@ -229,7 +232,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='power'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -263,7 +266,7 @@ show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('ibus', 'pinyin'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('ibus', 'pinyin')]
 per-window=false
 sources=[('xkb', 'us'), ('ibus', 'pinyin'), ('ibus', 'mozc-jp')]
 xkb-options=@as []
@@ -284,7 +287,7 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk', 'brave-brave', 'org-gnome-shell-portalhelper']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk', 'brave-brave', 'org-gnome-shell-portalhelper', 'org-qbittorrent-qbittorrent']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/apport-gtk]
@@ -364,6 +367,9 @@ application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/org-qbittorrent-qbittorrent]
+application-id='org.qbittorrent.qBittorrent.desktop'
 
 [org/gnome/desktop/notifications/application/slack-slack]
 application-id='slack_slack.desktop'
@@ -484,7 +490,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='free'
-window-ratio=(3.3899706478151228, 2.954513717910086)
+window-ratio=(1.5489134179447959, 0.2278356349632156)
 zoom=1.1285068273566832
 
 [org/gnome/evolution-data-server]
@@ -509,7 +515,7 @@ active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/weibin/.local/share/applications'
+virtual-root='file:///home/weibin/Downloads'
 
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
@@ -1255,8 +1261,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1630491914
-online-updates-timestamp=int64 1630491916
+check-timestamp=int64 1633082488
+online-updates-timestamp=int64 1633082490
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1291,7 +1297,7 @@ use-theme-transparency=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-transparency-percent=9
-custom-command=''
+custom-command='/usr/local/root/root-6.16.00-install/bin/root'
 foreground-color='rgb(255,255,255)'
 palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-custom-command=false
@@ -1306,7 +1312,7 @@ selected-color=(true, 0.44705882352941179, 0.62352941176470589, 0.81176470588235
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
-location-mode='path-bar'
+location-mode='filename-entry'
 show-hidden=false
 show-size-column=true
 show-type-column=true
