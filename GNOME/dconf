@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1632427820
+release-check-time=uint32 1634848140
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -287,7 +287,7 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk', 'brave-brave', 'org-gnome-shell-portalhelper', 'org-qbittorrent-qbittorrent']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk', 'brave-brave', 'org-gnome-shell-portalhelper', 'org-qbittorrent-qbittorrent', 'flameshot']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/apport-gtk]
@@ -316,6 +316,9 @@ application-id='eog.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/flameshot]
+application-id='flameshot.desktop'
 
 [org/gnome/desktop/notifications/application/gimp]
 application-id='gimp.desktop'
@@ -477,7 +480,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms nothing
-pictures-directory=@ms 'file:///home/weibin/SB/PREX/hrs/work/figure'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX'
 
 [org/gnome/evince/default]
 continuous=true
@@ -490,7 +493,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='free'
-window-ratio=(1.5489134179447959, 0.2278356349632156)
+window-ratio=(2.0, 1.2702020202020201)
 zoom=1.1285068273566832
 
 [org/gnome/evolution-data-server]
@@ -1261,8 +1264,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1633082488
-online-updates-timestamp=int64 1633082490
+check-timestamp=int64 1635760841
+online-updates-timestamp=int64 1635760844
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1312,7 +1315,7 @@ selected-color=(true, 0.44705882352941179, 0.62352941176470589, 0.81176470588235
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
-location-mode='filename-entry'
+location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
