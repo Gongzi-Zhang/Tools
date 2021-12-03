@@ -7,10 +7,10 @@ width=640
 
 [apps/update-manager]
 first-run=false
-launch-count=201
-launch-time=int64 1625739085
+launch-count=205
+launch-time=int64 1638359223
 show-details=true
-window-height=479
+window-height=476
 window-width=645
 
 [com/canonical/indicator/keyboard]
@@ -46,7 +46,7 @@ window-width=1280
 [com/ubuntu/update-notifier]
 no-show-notifications=false
 regular-auto-launch-interval=7
-release-check-time=uint32 1634848140
+release-check-time=uint32 1637267740
 
 [com/ubuntu/user-interface]
 scale-factor={'LVDS-1': 8}
@@ -232,7 +232,7 @@ maximized=false
 width=700
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='wifi'
 
 [org/gnome/deja-dup]
 backend='file'
@@ -287,8 +287,11 @@ autorun-x-content-open-folder=['x-content/image-dcf']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/image-dcf']
 
 [org/gnome/desktop/notifications]
-application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk', 'brave-brave', 'org-gnome-shell-portalhelper', 'org-qbittorrent-qbittorrent', 'flameshot']
+application-children=['chromium-browser', 'org-gnome-nautilus', 'apport-gtk', 'org-gnome-software', 'update-manager', 'virtualbox', 'slack-slack', 'gnome-network-panel', 'wireshark', 'telegramdesktop', 'thunderbird', 'chrome-gidgenkbbabolejbgbpnhbimgjbffefm-profile-1', 'vlc', 'org-gnome-terminal', 'gnome-language-selector', 'electronic-wechat-electronic-wechat', 'eog', 'netease-cloud-music', 'firefox', 'org-gnome-evince', 'gnome-power-panel', 'gnome-printers-panel', 'gnome-calculator-gnome-calculator', 'gnome-control-center', 'vmware-view', 'gnome-system-monitor-gnome-system-monitor', 'chromium-chromium', 'gnome-system-monitor', 'snap-store-snap-store', 'snap-store-ubuntu-software', 'xdg-desktop-portal-gtk', 'gimp', 'org-gnome-eog', 'zoom', 'google-chrome', 'baidunetdisk', 'brave-brave', 'org-gnome-shell-portalhelper', 'org-qbittorrent-qbittorrent', 'flameshot', 'appimagekit-3b7e7b815bd17d80627798744f01da05-telegram-desktop']
 show-banners=true
+
+[org/gnome/desktop/notifications/application/appimagekit-3b7e7b815bd17d80627798744f01da05-telegram-desktop]
+application-id='appimagekit_3b7e7b815bd17d80627798744f01da05-Telegram_Desktop.desktop'
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -480,7 +483,7 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms nothing
-pictures-directory=@ms 'file:///home/weibin/SB/PREX'
+pictures-directory=@ms 'file:///home/weibin/SB/PREX/hrs/work/tmp'
 
 [org/gnome/evince/default]
 continuous=true
@@ -493,7 +496,7 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=226
 sizing-mode='free'
-window-ratio=(2.0, 1.2702020202020201)
+window-ratio=(0.94444444444444442, 0.59848484848484851)
 zoom=1.1285068273566832
 
 [org/gnome/evolution-data-server]
@@ -615,6 +618,14 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/2d173cd4-8c44-4bf5-9148-cf3cc1f40518]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/31c446e7-3f37-4ce9-8b62-6b6f01511b22]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/34f9f03d-dd1b-42e4-9e2a-d40f002d7cdb]
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
@@ -667,6 +678,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/e1c3ce41-1353-4855-9efe-897b13ddf290]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/f6dba20e-576a-3e15-9ab8-21294b58a4d3]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -683,8 +698,8 @@ window-size=[800, 500]
 
 [org/gnome/power-manager]
 info-history-type='charge'
-info-last-device='/org/freedesktop/UPower/devices/battery_BAT0'
-info-page-number=2
+info-last-device='/org/freedesktop/UPower/devices/line_power_AC'
+info-page-number=0
 info-stats-type='discharge-accuracy'
 
 [org/gnome/settings-daemon/peripherals/keyboard]
@@ -1264,8 +1279,8 @@ library-maximize=false
 library-width=1024
 
 [org/gnome/software]
-check-timestamp=int64 1635760841
-online-updates-timestamp=int64 1635760844
+check-timestamp=int64 1638356621
+online-updates-timestamp=int64 1638356653
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -1324,7 +1339,7 @@ sort-column='modified'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(491, 207)
+window-position=(171, 27)
 window-size=(938, 646)
 
 [org/yorba/shotwell/preferences/ui]
